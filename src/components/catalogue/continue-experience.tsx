@@ -130,7 +130,7 @@ export function ContinueExperience({ entries }: ContinueExperienceProps) {
   const inProgressRows = React.useMemo(
     () =>
       inProgress
-        .map((progress) => ({ progress, entry: entriesBySlug.get(progress.movieSlug) }))
+        .map((progress) => ({ progress, entry: entriesBySlug.get(progress.titleSlug) }))
         .filter(
           (row): row is { progress: PlaybackProgress; entry: SearchEntry } =>
             row.entry !== undefined,
@@ -141,7 +141,7 @@ export function ContinueExperience({ entries }: ContinueExperienceProps) {
   const finishedRows = React.useMemo(
     () =>
       finished
-        .map((progress) => ({ progress, entry: entriesBySlug.get(progress.movieSlug) }))
+        .map((progress) => ({ progress, entry: entriesBySlug.get(progress.titleSlug) }))
         .filter(
           (row): row is { progress: PlaybackProgress; entry: SearchEntry } =>
             row.entry !== undefined,

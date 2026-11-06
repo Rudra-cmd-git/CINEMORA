@@ -5,10 +5,11 @@ import { HeroCarousel } from "@/components/movie/hero";
 import { MovieRow } from "@/components/movie/row";
 import { buttonClasses } from "@/components/ui/button-styles";
 import {
+  getFeaturedSeries,
   getHomeRows,
   getSearchIndex,
-  getSpotlight,
   movies,
+  series,
   totalRuntimeMinutes,
 } from "@/lib/catalogue";
 
@@ -21,7 +22,7 @@ import {
  * catalogue module is pulled into the browser bundle by them.
  */
 export default function HomePage() {
-  const spotlight = getSpotlight(3);
+  const spotlight = movies.slice(0, 3);
   const rows = getHomeRows();
 
   // Compact projection for the localStorage-backed Continue rail. The client
@@ -42,9 +43,11 @@ export default function HomePage() {
   const verifiedCount = movies.filter(
     (movie) => movie.rights.overallStatus === "verified",
   ).length;
+  const featuredSeries = getFeaturedSeries();
 
   const stats = [
     { label: "Films", value: String(movies.length), note: "Hand-picked, not aggregated" },
+    { label: "Series", value: String(series.length), note: "Full seasons, every episode" },
     { label: "Years", value: `${earliestYear}–${latestYear}`, note: "Silent era to the sixties" },
     { label: "Run time", value: `${totalHours} hrs`, note: "Of uninterrupted cinema" },
     {
@@ -70,6 +73,38 @@ export default function HomePage() {
             movies={row.movies}
           />
         ))}
+
+        {/* Web series rail */}
+        {featuredSeries && (
+          <section aria-labelledby="series-heading" className="mt-14">
+            <div className="flex items-end justify-between gap-4">
+              <div>
+                <p className="text-[11px] font-medium uppercase tracking-[0.3em] text-gold">
+                  Web series
+                </p>
+                <h2 id="series-heading" className="mt-3 font-display text-2xl leading-tight text-ink sm:text-3xl">
+                  Stream full series
+                </h2>
+              </div>
+              <Link
+                href="/explore"
+                className={buttonClasses("ghost", "sm")}
+              >
+                All series
+                <ArrowRight className="size-3.5" aria-hidden />
+              </Link>
+            </div>
+            <div className="mt-8 flex gap-4 overflow-x-auto scrollbar-hide pb-4 sm:overflow-x-hidden sm:flex-wrap sm:gap-6 lg:gap-8">
+              {series.map((show) => (
+                <SeriesCard key={show.slug} show={show} />
+              ))}
+            </div>
+            <p className="mt-6 text-[12.5px] text-ink-muted">
+              Every season and episode streams the same way films do — pick a title,
+              choose an episode, and watch.
+            </p>
+          </section>
+        )}
       </div>
 
       {/* Closing editorial band */}
@@ -141,5 +176,34 @@ export default function HomePage() {
         </div>
       </section>
     </>
+  );
+}
+
+/** Compact series card for the homepage rail. Server component. */
+function SeriesCard({ show }: { show: (typeof series)[number] }) {
+  return (
+    <Link
+      href={`/series/${show.slug}`}
+      className="group flex flex-col gap-2"
+    >
+      <div className="relative aspect-[2/3] w-[160px] shrink-0 overflow-hidden rounded-md shadow-[var(--cm-shadow-lg)] ring-1 ring-white/10 group-hover:ring-gold/50 transition ring-transition duration-300">
+        <img
+          src={show.poster.src}
+          alt={`Poster for ${show.title} (${show.year})`}
+          className="object-cover w-full h-full"
+          loading="lazy"
+          decoding="async"
+        />
+        <span className="absolute left-2 top-2 z-10 inline-flex items-center gap-1 rounded-md bg-black/60 px-2 py-0.5 text-[10px] font-medium text-white">
+          Series
+        </span>
+      </div>
+      <h3 className="font-display text-sm font-semibold leading-tight text-ink group-hover:text-gold transition-colors line-clamp-1">
+        {show.title}
+      </h3>
+      <p className="text-[11px] text-ink-muted">
+        {show.year} · {show.seasonCount} season{show.seasonCount !== 1 ? "s" : ""} · {show.totalEpisodes} episode{show.totalEpisodes !== 1 ? "s" : ""}
+      </p>
+    </Link>
   );
 }

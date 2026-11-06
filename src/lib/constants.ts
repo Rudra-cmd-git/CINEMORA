@@ -5,7 +5,7 @@ export const SITE = {
   wordmark: "CINEMORA",
   tagline: "Cinema, curated",
   description:
-    "A premium, advert-free streaming home for cinema in the public domain. Hand-picked classics, remastered artwork, and a player built for watching.",
+    "Cinemora is your home for movies and web series. A curated streaming library of classic films and popular series — hand-picked titles, restored artwork, and a player built for watching. Every film is in the public domain and free to watch.",
   url: "https://cinemora-gamma.vercel.app",
   contactEmail: "hello@cinemora-gamma.vercel.app",
 } as const;

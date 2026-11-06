@@ -3,7 +3,7 @@
  * watch page and the client player island.
  */
 
-import type { Movie } from "@/types";
+import type { Movie, TVSeries, Watchable, Episode } from "@/types";
 import type { PlayerMovie } from "./types";
 
 /**
@@ -22,6 +22,31 @@ export function toPlayerMovie(movie: Movie): PlayerMovie {
     subtitleSources: movie.subtitleSources,
     sourcePage: movie.sourcePage,
     aspectRatio: movie.aspectRatio,
+  };
+}
+
+/**
+ * Projects any playable title (film or episode) down to the player's minimal
+ * prop surface. Episodes inherit the parent series' artwork and source page
+ * when they don't carry their own.
+ */
+export function toPlayerWatchable(watchable: Watchable): PlayerMovie {
+  if (watchable.type === "movie") {
+    return toPlayerMovie(watchable);
+  }
+
+  // Episode: fall back to series-level artwork/source where the episode has none.
+  return {
+    slug: watchable.slug,
+    title: watchable.title,
+    year: watchable.seasonNumber ? watchable.seasonNumber : 0,
+    runtimeMinutes: watchable.runtimeMinutes ?? 0,
+    genres: [],
+    backdrop: watchable.poster ?? { src: "", width: 0, height: 0 },
+    videoSources: watchable.videoSources,
+    subtitleSources: watchable.subtitleSources,
+    sourcePage: watchable.sourcePage ?? "",
+    aspectRatio: watchable.aspectRatio ?? "16:9",
   };
 }
 

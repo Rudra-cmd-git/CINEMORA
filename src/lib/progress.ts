@@ -15,7 +15,8 @@ function isProgress(value: unknown): value is PlaybackProgress {
   if (typeof value !== "object" || value === null) return false;
   const p = value as PlaybackProgress;
   return (
-    typeof p.movieSlug === "string" &&
+    typeof p.titleSlug === "string" &&
+    typeof p.titleType === "string" &&
     typeof p.currentTime === "number" &&
     typeof p.duration === "number" &&
     typeof p.lastWatchedAt === "string" &&
@@ -39,7 +40,7 @@ export function getProgress(map: ProgressMap, slug: string): PlaybackProgress | 
 }
 
 export interface SaveProgressInput {
-  movieSlug: string;
+  titleSlug: string;
   currentTime: number;
   duration: number;
   playbackRate?: number;
@@ -50,14 +51,15 @@ export interface SaveProgressInput {
  * from a failed stream can never mark a film as finished.
  */
 export function saveProgress(input: SaveProgressInput): void {
-  const { movieSlug, currentTime, duration } = input;
+  const { titleSlug, currentTime, duration } = input;
   if (!Number.isFinite(currentTime) || !Number.isFinite(duration) || duration <= 0) return;
 
   const clampedTime = Math.min(Math.max(0, currentTime), duration);
   const completed = clampedTime / duration >= COMPLETION_THRESHOLD;
 
   const entry: PlaybackProgress = {
-    movieSlug,
+    titleSlug,
+    titleType: "movie",
     currentTime: completed ? duration : clampedTime,
     duration,
     completed,
@@ -65,7 +67,7 @@ export function saveProgress(input: SaveProgressInput): void {
     playbackRate: input.playbackRate ?? 1,
   };
 
-  progressStore.update((current) => ({ ...current, [movieSlug]: entry }));
+  progressStore.update((current) => ({ ...current, [titleSlug]: entry }));
 }
 
 /** When the player should offer to resume rather than start over. */

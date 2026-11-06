@@ -20,7 +20,7 @@ export function useWatchlist(): UseWatchlist {
     watchlistStore.getServerSnapshot,
   );
 
-  const slugs = items.map((item) => item.movieSlug);
+  const slugs = items.map((item) => item.titleSlug);
 
   const has = useCallback((slug: string) => isInWatchlist(items, slug), [items]);
 

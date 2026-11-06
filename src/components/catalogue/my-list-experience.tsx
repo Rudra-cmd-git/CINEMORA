@@ -43,7 +43,7 @@ export function MyListExperience({ movies }: MyListExperienceProps) {
   const savedMovies = React.useMemo(
     () =>
       items
-        .map((item) => moviesBySlug.get(item.movieSlug))
+        .map((item) => moviesBySlug.get(item.titleSlug))
         .filter((movie): movie is Movie => Boolean(movie)),
     [items, moviesBySlug],
   );

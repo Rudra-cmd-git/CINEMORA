@@ -160,7 +160,7 @@ export function Player({ movie, initialTime }: PlayerProps) {
     if (!Number.isFinite(total) || total <= 0) return;
     if (!Number.isFinite(position) || position <= 0.5) return;
     save({
-      movieSlug: movie.slug,
+      titleSlug: movie.slug,
       currentTime: position,
       duration: total,
       playbackRate: rateRef.current,
@@ -825,6 +825,8 @@ export function Player({ movie, initialTime }: PlayerProps) {
   };
 
   const sources = movie.videoSources.slice(sourceIndex);
+  const activeSource = sources[0];
+  const isEmbed = Boolean(activeSource?.embedUrl);
   const chromeVisible = controlsVisible || resumeAt !== null;
   const interactiveChrome = chromeVisible ? "pointer-events-auto" : "pointer-events-none";
 
@@ -850,48 +852,61 @@ export function Player({ movie, initialTime }: PlayerProps) {
           }}
         >
           <div className={cn("relative w-full", fullscreen ? "h-full" : "aspect-video")}>
-            {/* The one and only video element: no native controls, ever. */}
-            <video
-              ref={videoRef}
-              className="absolute inset-0 h-full w-full bg-black object-contain"
-              poster={movie.backdrop.src}
-              playsInline
-              preload="metadata"
-              onClick={handleStageClick}
-              onLoadedMetadata={handleLoadedMetadata}
-              onTimeUpdate={handleTimeUpdate}
-              onProgress={handleProgress}
-              onPlay={handlePlay}
-              onPause={handlePause}
-              onPlaying={handlePlaying}
-              onCanPlay={hideBuffering}
-              onWaiting={showBufferingSoon}
-              onSeeking={showBufferingSoon}
-              onSeeked={(event) => {
-                hideBuffering();
-                syncBuffered(event.currentTarget);
-              }}
-              onEnded={handleEnded}
-              onError={handleVideoError}
-            >
-              {sources.map((source, index) => (
-                <source
-                  key={`${source.url}-${sourceIndex + index}`}
-                  src={source.url}
-                  type={source.mimeType}
-                />
-              ))}
-              {movie.subtitleSources.map((source, index) => (
-                <track
-                  key={`${source.url}-${index}`}
-                  kind={source.kind}
-                  label={source.label}
-                  srcLang={source.language}
-                  src={resolveSubtitleUrl(source.url)}
-                />
-              ))}
-              Your browser does not support the video element.
-            </video>
+            {/* The media element: a native <video> for self-hosted films, or an
+             * iframe for embedded third-party players (the NetMirror model). */}
+            {isEmbed && activeSource ? (
+              <iframe
+                className="absolute inset-0 h-full w-full bg-black"
+                src={activeSource.embedUrl}
+                title={`Watch ${movie.title} on ${activeSource.embedLabel ?? "external player"}`}
+                allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+                allowFullScreen
+                referrerPolicy="origin"
+                loading="eager"
+              />
+            ) : (
+              <video
+                ref={videoRef}
+                className="absolute inset-0 h-full w-full bg-black object-contain"
+                poster={movie.backdrop.src}
+                playsInline
+                preload="metadata"
+                onClick={handleStageClick}
+                onLoadedMetadata={handleLoadedMetadata}
+                onTimeUpdate={handleTimeUpdate}
+                onProgress={handleProgress}
+                onPlay={handlePlay}
+                onPause={handlePause}
+                onPlaying={handlePlaying}
+                onCanPlay={hideBuffering}
+                onWaiting={showBufferingSoon}
+                onSeeking={showBufferingSoon}
+                onSeeked={(event) => {
+                  hideBuffering();
+                  syncBuffered(event.currentTarget);
+                }}
+                onEnded={handleEnded}
+                onError={handleVideoError}
+              >
+                {sources.map((source, index) => (
+                  <source
+                    key={`${source.url}-${sourceIndex + index}`}
+                    src={source.url}
+                    type={source.mimeType}
+                  />
+                ))}
+                {movie.subtitleSources.map((source, index) => (
+                  <track
+                    key={`${source.url}-${index}`}
+                    kind={source.kind}
+                    label={source.label}
+                    srcLang={source.language}
+                    src={resolveSubtitleUrl(source.url)}
+                  />
+                ))}
+                Your browser does not support the video element.
+              </video>
+            )}
 
             {/* Initial-state play affordance (poster) */}
             {!hasStarted && !playing && !fatalError ? (

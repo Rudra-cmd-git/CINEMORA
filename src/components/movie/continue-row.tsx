@@ -32,7 +32,7 @@ export function ContinueRow({ movies }: ContinueRowProps) {
   );
 
   const items = inProgress.flatMap((progress: PlaybackProgress) => {
-    const movie = bySlug.get(progress.movieSlug);
+    const movie = bySlug.get(progress.titleSlug);
     return movie ? [{ progress, movie }] : [];
   });
 
