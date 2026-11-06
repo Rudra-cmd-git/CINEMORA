@@ -1,0 +1,101 @@
+/* ==========================================================================
+   CINEMORA — design tokens
+   Single source of truth for colour, motion, spacing and typography.
+   ========================================================================== */
+
+:root {
+  /* ---- Canvas & surfaces ------------------------------------------------ */
+  --cm-canvas: #08080a;
+  --cm-canvas-soft: #0b0b0e;
+  --cm-elevated: #101014;
+  --cm-surface: #16161b;
+  --cm-surface-2: #1d1d23;
+
+  /* ---- Lines ------------------------------------------------------------ */
+  --cm-line: rgba(255, 255, 255, 0.08);
+  --cm-line-strong: rgba(255, 255, 255, 0.16);
+  --cm-line-gold: rgba(228, 180, 92, 0.42);
+
+  /* ---- Ink -------------------------------------------------------------- */
+  --cm-ink: #f6f3ee;
+  --cm-ink-soft: #a8a5a0;
+  --cm-ink-muted: #6f6c68;
+  --cm-ink-inverse: #0a0a0c;
+
+  /* ---- Accents ---------------------------------------------------------- */
+  --cm-gold: #e4b45c;
+  --cm-gold-hover: #f2c877;
+  --cm-gold-dim: #b98f3f;
+  --cm-gold-soft: rgba(228, 180, 92, 0.14);
+  --cm-crimson: #c4273a;
+  --cm-crimson-soft: rgba(196, 39, 58, 0.16);
+  --cm-teal: #1ab5a2;
+  --cm-teal-soft: rgba(26, 181, 162, 0.16);
+
+  /* ---- Gradients -------------------------------------------------------- */
+  --cm-grad-hero: linear-gradient(
+    0deg,
+    #08080a 2%,
+    rgba(8, 8, 10, 0.92) 26%,
+    rgba(8, 8, 10, 0.55) 58%,
+    rgba(8, 8, 10, 0.35) 100%
+  );
+  --cm-grad-hero-side: linear-gradient(
+    90deg,
+    rgba(8, 8, 10, 0.96) 0%,
+    rgba(8, 8, 10, 0.72) 38%,
+    rgba(8, 8, 10, 0) 78%
+  );
+  --cm-grad-poster: linear-gradient(
+    180deg,
+    rgba(8, 8, 10, 0) 38%,
+    rgba(8, 8, 10, 0.55) 74%,
+    rgba(8, 8, 10, 0.94) 100%
+  );
+  --cm-grad-gold: linear-gradient(135deg, #f2c877 0%, #c99a45 100%);
+  --cm-grad-gold-soft: linear-gradient(
+    135deg,
+    rgba(242, 200, 119, 0.18) 0%,
+    rgba(201, 154, 69, 0.06) 100%
+  );
+
+  /* ---- Shadows ---------------------------------------------------------- */
+  --cm-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --cm-shadow-md: 0 10px 24px -8px rgba(0, 0, 0, 0.6);
+  --cm-shadow-lg: 0 24px 48px -16px rgba(0, 0, 0, 0.72);
+  --cm-shadow-xl: 0 40px 80px -24px rgba(0, 0, 0, 0.85);
+  --cm-glow-gold: 0 0 0 1px rgba(228, 180, 92, 0.4),
+    0 12px 40px -12px rgba(228, 180, 92, 0.45);
+
+  /* ---- Radii ------------------------------------------------------------ */
+  --cm-radius-xs: 4px;
+  --cm-radius-sm: 8px;
+  --cm-radius-md: 12px;
+  --cm-radius-lg: 16px;
+  --cm-radius-xl: 24px;
+  --cm-radius-full: 999px;
+
+  /* ---- Motion ----------------------------------------------------------- */
+  --cm-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --cm-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --cm-fast: 140ms;
+  --cm-base: 220ms;
+  --cm-slow: 380ms;
+
+  /* ---- Type ------------------------------------------------------------- */
+  --cm-font-display: var(--font-cinzel), "Iowan Old Style", Georgia, serif;
+  --cm-font-body: var(--font-inter), -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --cm-font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+
+  /* ---- Layout ----------------------------------------------------------- */
+  --cm-shell: 1680px;
+  --cm-gutter: clamp(1rem, 3.6vw, 3.5rem);
+  --cm-header: 68px;
+
+  /* ---- Z-index ---------------------------------------------------------- */
+  --cm-z-sticky: 40;
+  --cm-z-drawer: 60;
+  --cm-z-modal: 70;
+  --cm-z-toast: 80;
+}

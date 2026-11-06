@@ -1,0 +1,50 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# next.js
+/.next/
+/out/
+next-env.d.ts
+*.tsbuildinfo
+
+# production
+/build
+
+# env
+.env
+.env*.local
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------------
+# Research artifacts (see docs/analysis/README.md).
+# The application never imports these; they are large binaries and extracted
+# APK trees kept on disk only, so cloning the site stays lightweight.
+# ---------------------------------------------------------------------------
+/docs/analysis/artifacts/
+*.apk
+*.zip
+*.dex
+*.so
+*.bundle
+streaming_urls.txt
+domains.txt
+
+# python
+__pycache__/
+*.pyc
+
+# local QA scratch (CDP probes, screenshots, temp profiles)
+/.cm-tmp/
+
+# vercel
+.vercel

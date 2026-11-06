@@ -1,0 +1,301 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+
+/* ---------------------------------------------------------------------------
+   Expose design tokens to Tailwind utilities.
+   `inline` keeps utilities pointing at the CSS variables so runtime theming
+   and JS-driven overrides both work.
+--------------------------------------------------------------------------- */
+@theme inline {
+  --color-canvas: var(--cm-canvas);
+  --color-canvas-soft: var(--cm-canvas-soft);
+  --color-elevated: var(--cm-elevated);
+  --color-surface: var(--cm-surface);
+  --color-surface-2: var(--cm-surface-2);
+
+  --color-line: var(--cm-line);
+  --color-line-strong: var(--cm-line-strong);
+  --color-line-gold: var(--cm-line-gold);
+
+  --color-ink: var(--cm-ink);
+  --color-ink-soft: var(--cm-ink-soft);
+  --color-ink-muted: var(--cm-ink-muted);
+  --color-ink-inverse: var(--cm-ink-inverse);
+
+  --color-gold: var(--cm-gold);
+  --color-gold-hover: var(--cm-gold-hover);
+  --color-gold-dim: var(--cm-gold-dim);
+  --color-gold-soft: var(--cm-gold-soft);
+  --color-crimson: var(--cm-crimson);
+  --color-crimson-soft: var(--cm-crimson-soft);
+  --color-teal: var(--cm-teal);
+  --color-teal-soft: var(--cm-teal-soft);
+
+  --font-display: var(--cm-font-display);
+  --font-sans: var(--cm-font-body);
+  --font-mono: var(--cm-font-mono);
+
+  --radius-xs: var(--cm-radius-xs);
+  --radius-sm: var(--cm-radius-sm);
+  --radius-md: var(--cm-radius-md);
+  --radius-lg: var(--cm-radius-lg);
+  --radius-xl: var(--cm-radius-xl);
+
+  --shadow-sm: var(--cm-shadow-sm);
+  --shadow-md: var(--cm-shadow-md);
+  --shadow-lg: var(--cm-shadow-lg);
+  --shadow-xl: var(--cm-shadow-xl);
+  --shadow-glow-gold: var(--cm-glow-gold);
+
+  --ease-out-expo: var(--cm-ease);
+
+  --animate-shimmer: shimmer 1.6s linear infinite;
+  --animate-fade-in: fade-in var(--cm-base) var(--cm-ease) both;
+  --animate-fade-up: fade-up var(--cm-slow) var(--cm-ease) both;
+  --animate-scale-in: scale-in var(--cm-base) var(--cm-ease) both;
+  --animate-spin-slow: spin 1.1s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -180% 0;
+  }
+  100% {
+    background-position: 180% 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Base
+--------------------------------------------------------------------------- */
+@layer base {
+  * {
+    border-color: var(--cm-line);
+  }
+
+  html {
+    color-scheme: dark;
+    -webkit-text-size-adjust: 100%;
+    scrollbar-color: #2a2a31 var(--cm-canvas);
+  }
+
+  body {
+    background-color: var(--cm-canvas);
+    color: var(--cm-ink);
+    font-family: var(--cm-font-body);
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: rgba(228, 180, 92, 0.28);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--cm-gold);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+  }
+
+  /* Slim, dark scrollbars for panels that need them */
+  .cm-scroll::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .cm-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .cm-scroll::-webkit-scrollbar-thumb {
+    background: #26262d;
+    border-radius: 999px;
+    border: 3px solid var(--cm-canvas);
+  }
+  .cm-scroll::-webkit-scrollbar-thumb:hover {
+    background: #35353e;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Components
+--------------------------------------------------------------------------- */
+@layer components {
+  .cm-shell {
+    width: 100%;
+    max-width: var(--cm-shell);
+    margin-inline: auto;
+    padding-inline: var(--cm-gutter);
+  }
+
+  .cm-grain {
+    position: fixed;
+    inset: 0;
+    z-index: 90;
+    pointer-events: none;
+    opacity: 0.035;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .cm-vignette {
+    pointer-events: none;
+    background: radial-gradient(
+      120% 100% at 50% 0%,
+      rgba(8, 8, 10, 0) 40%,
+      rgba(8, 8, 10, 0.55) 100%
+    );
+  }
+
+  /* Edge fade for horizontal rails */
+  .cm-rail-fade {
+    -webkit-mask-image: linear-gradient(
+      90deg,
+      transparent 0,
+      #000 var(--cm-gutter),
+      #000 calc(100% - var(--cm-gutter)),
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      90deg,
+      transparent 0,
+      #000 var(--cm-gutter),
+      #000 calc(100% - var(--cm-gutter)),
+      transparent 100%
+    );
+  }
+
+  .cm-no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .cm-no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cm-glass {
+    background: rgba(10, 10, 13, 0.72);
+    backdrop-filter: saturate(140%) blur(18px);
+    -webkit-backdrop-filter: saturate(140%) blur(18px);
+  }
+
+  .cm-hairline {
+    box-shadow: inset 0 0 0 1px var(--cm-line);
+  }
+
+  .cm-card-hover {
+    transition:
+      transform var(--cm-base) var(--cm-ease),
+      box-shadow var(--cm-base) var(--cm-ease);
+  }
+
+  .cm-skeleton {
+    background: linear-gradient(
+      100deg,
+      var(--cm-surface) 20%,
+      #24242c 42%,
+      var(--cm-surface) 64%
+    );
+    background-size: 220% 100%;
+    animation: shimmer 1.6s linear infinite;
+  }
+
+  .cm-link-underline {
+    position: relative;
+  }
+  .cm-link-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 1px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: var(--cm-gold);
+    transition: transform var(--cm-base) var(--cm-ease);
+  }
+  .cm-link-underline:hover::after,
+  .cm-link-underline:focus-visible::after {
+    transform: scaleX(1);
+  }
+
+  .cm-tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .cm-wordmark {
+    font-family: var(--cm-font-display);
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Reduced motion
+--------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

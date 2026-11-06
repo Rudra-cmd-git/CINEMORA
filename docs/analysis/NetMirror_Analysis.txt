@@ -1,0 +1,127 @@
+================================================================================
+NETMIRROR APK - REVERSE ENGINEERING ANALYSIS
+================================================================================
+Target: C:\Users\rudra\OneDrive\Desktop\CINEMORA\NetMirror_Updated.apk
+SHA-256: 70af4ac2a7ec38b06de4fcb6d18dcbdf7ddc2095bb8129f0f84860dcb995dc0c
+Analysis performed with: REA (rea-agents v6.8.0), MCP server io.github.morluto/rea
+Analysis date: 2026-11-06
+Workspace: CINEMORA
+
+================================================================================
+1. APK STRUCTURE (REA static inventory)
+================================================================================
+- Format: APK (ZIP archive), 551 inventory entries, source_complete: true
+- No classes.dex application logic found in the traditional sense.
+- assets/index.android.bundle: 1,215,512 bytes (Hermes bytecode, magic C6 1F BC 03)
+- Native libraries present for arm64-v8a, armeabi-v7a, x86, x86_64:
+    * libreactnative.so (React Native runtime)
+    * libhermes.so (Hermes JavaScript engine)
+    * libfbjni.so, libjsi.so, libimagepipeline.so
+    * libappmodules.so (custom app native module)
+    * libgesturehandler.so, libnative-filters.so, libnative-imagetranscoder.so
+- AndroidManifest.xml: 7,272 bytes (compiled AXML binary)
+- resources.arsc: 345,512 bytes
+
+================================================================================
+2. TECHNOLOGY STACK
+================================================================================
+NetMirror is a React Native application (Hermes engine), not a native video
+player. Its UI and logic run as JavaScript/Hermes bytecode rendered through
+React Native, with a custom native module (libappmodules.so).
+
+Key evidence from libappmodules.so strings:
+- RNCWebViewEventEmitter
+- onHttpError / OnHttpError
+- allowsPictureInPictureMediaPlayback
+- mediaPlaybackRequiresUserAction
+- allowsFullscreenVideo
+- allowsInlineMediaPlayback
+
+Conclusion: NetMirror is a WebView-based wrapper. It loads the NetMirror
+streaming website inside an embedded React Native WebView and plays video
+through the site's own web player, rather than exposing direct HLS/DASH stream
+URLs natively.
+
+================================================================================
+3. HOW IT STREAMS FREE MOVIES AND WEB SERIES
+================================================================================
+
+STEP 1 - App launch:
+  The app launches and loads assets/index.android.bundle (Hermes bytecode).
+  Because it is Hermes bytecode (not plain JavaScript), the logic cannot be
+  read directly as source; it must be decompiled or observed at runtime.
+
+STEP 2 - Mirror / config fetch:
+  The bundle contains a plaintext fragment "https://netmirror.app/settings"
+  (observed as "tps://netmirror.app-settings"). This is likely a config /
+  mirror-list endpoint that returns the current working mirror domain.
+
+STEP 3 - Rotating mirror domain network:
+  The bundle contains multiple base64-encoded URLs. Decoding them yields a
+  network of "mobidetect.*" mirror domains:
+
+    Base64                                  Decoded
+    ----------------------------------------  ----------------------
+    aHR0cHM6Ly9tb2JpZGV0ZWN0Lmluaw==       https://mobidetect.ink
+    aHR0cHM6Ly9tb2JpZGV0ZWN0Lmlu            https://mobidetect.in
+    aHR0cHM6Ly9tb2JpbGVkZXRlY3QuYXBw        https://mobiledetect.app
+    aHR0cHM6Ly9tb2JpZGV0ZWN0cy50b3A=       https://mobidetects.top
+    aHR0cHM6Ly9tb2JpZGV0ZWN0cy54eXo=       https://mobidetects.xyz
+    aHR0cHM6Ly9tb2JpZGV0ZWN0cy5hcnQ=       https://mobidetects.art
+    aHR0cHM6Ly9tb2JpZGV0ZWN0cy5jYw==       https://mobidetects.cc
+    aHR0cHM6Ly9tb2JpZGV0ZWN0cy5pbmZv       https://mobidetects.info
+    aHR0cHM6Ly9tb2JpZGV0ZWN0cy5wcm8=       https://mobidetects.pro
+    aHR0cHM6Ly9tb2JpZGV0ZWN0cy5zdG9yZQ==   https://mobidetects.store
+
+  Plus: https://netmirror.app (primary domain)
+
+STEP 4 - WebView playback:
+  The WebView loads the active mirror domain. The user browses movies and web
+  series on the mirrored site; video plays inside the WebView via the site's
+  player. The actual video streams (.m3u8 HLS / .mpd DASH manifests) are
+  fetched live from the mirror domain at runtime - they are NOT embedded in
+  the APK.
+
+STEP 5 - Mirror rotation:
+  When one mirror domain is blocked/taken down, the app switches to another
+  mobidetect.* TLD variant, which is why so many domain variants are embedded.
+
+================================================================================
+4. KEY FINDINGS SUMMARY
+================================================================================
+- NetMirror provides free movies and web series by wrapping netmirror.app in a
+  React Native WebView.
+- It maintains a fallback network of mobidetect.* mirror domains (ink, in, app,
+  top, xyz, art, cc, info, pro, store) to evade blocking.
+- Stream URLs are dynamic and fetched at runtime from the mirror site; they are
+  not present as static strings in the APK.
+- No direct video file URLs or DRM license servers were found in the static
+  analysis.
+
+================================================================================
+5. LIMITATIONS OF THIS STATIC ANALYSIS
+================================================================================
+- index.android.bundle is Hermes bytecode, not readable JavaScript.
+- Movie/series titles and per-title stream URLs (.m3u8/.mpd) are loaded live
+  from netmirror.app / mobidetect.* at runtime and cannot be recovered without
+  dynamic execution.
+- AndroidManifest.xml is compiled AXML binary; the permission list (e.g.,
+  INTERNET) was not cleanly resolved by static string extraction, though
+  WebView/network use is implied by the code.
+- No dynamic analysis (ADB/emulator, traffic interception) was performed.
+
+================================================================================
+6. EVIDENCE LOCATION
+================================================================================
+- APK file: NetMirror_Updated.apk (workspace root)
+- Extracted files: NetMirror_extracted/ (subdirectory)
+- REA evidence bundle retained in session.
+
+================================================================================
+DISCLAIMER
+================================================================================
+This analysis is for educational and security-research purposes only, performed
+on a file present in the user's workspace. Accessing copyrighted content via
+unofficial mirrors may violate terms of service and applicable law. The author
+does not endorse or encourage copyright infringement.
+================================================================================

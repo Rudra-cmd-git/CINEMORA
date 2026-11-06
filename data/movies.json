@@ -1,0 +1,1734 @@
+{
+  "generatedAt": "2026-11-06T12:12:03Z",
+  "movies": [
+    {
+      "id": "nosferatu-1922",
+      "slug": "nosferatu-1922",
+      "title": "Nosferatu",
+      "originalTitle": "Nosferatu, eine Symphonie des Grauens",
+      "year": 1922,
+      "runtimeMinutes": 94,
+      "tagline": "The first vampire in cinema — and still the most frightening.",
+      "synopsis": "Estate agent Thomas Hutter travels to the remote Carpathian castle of Count Orlok, a reclusive nobleman with an unsettling appetite for blood. When Orlok sets his sights on Hutter's wife Ellen, a plague of rats and shadow descends on the town of Wisborg. F. W. Murnau's unauthorised adaptation of Dracula gave cinema its definitive vampire: a silhouette climbing a staircase, a shadow with a mind of its own.",
+      "genres": [
+        {
+          "id": "horror",
+          "name": "Horror",
+          "slug": "horror"
+        },
+        {
+          "id": "silent",
+          "name": "Silent Era",
+          "slug": "silent"
+        },
+        {
+          "id": "fantasy",
+          "name": "Fantasy",
+          "slug": "fantasy"
+        }
+      ],
+      "director": [
+        "F. W. Murnau"
+      ],
+      "cast": [
+        {
+          "name": "Max Schreck",
+          "role": "Count Orlok"
+        },
+        {
+          "name": "Gustav von Wangenheim",
+          "role": "Thomas Hutter"
+        },
+        {
+          "name": "Greta Schröder",
+          "role": "Ellen Hutter"
+        },
+        {
+          "name": "Alexander Granach",
+          "role": "Knock"
+        },
+        {
+          "name": "Georg H. Schnell",
+          "role": "Harding"
+        }
+      ],
+      "writer": [
+        "Henrik Galeen"
+      ],
+      "composer": [
+        "Hans Erdmann"
+      ],
+      "language": "de",
+      "country": "DE",
+      "color": "bw",
+      "aspectRatio": "1.33:1",
+      "featuredRank": 1,
+      "poster": {
+        "src": "/posters/nosferatu-1922-md.webp",
+        "width": 600,
+        "height": 900,
+        "blurDataURL": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADwBACdASoUAB4APulepk0pJSOiMAgBIB0JZwC7ACHfLxiHh1qXTKjRtl5l+dbYuJIA/tkfTHvtiEHilw2jq9JNqtkRtrxzZKq2DldO6xHtfYG4uC/Mq36vrxGtYGmUCHuiz4tgIksiCwGYP7Kl5AWSYAA="
+      },
+      "backdrop": {
+        "src": "/backdrops/nosferatu-1922.webp",
+        "width": 1920,
+        "height": 1080
+      },
+      "videoSources": [
+        {
+          "url": "https://archive.org/download/Nosferatu1922HD/Nosferatu%20%281922%29%20HD.mp4",
+          "mimeType": "video/mp4",
+          "quality": "auto",
+          "label": "Source"
+        }
+      ],
+      "subtitleSources": [],
+      "rights": {
+        "overallStatus": "verified",
+        "assetRights": [
+          {
+            "assetType": "video",
+            "status": "verified",
+            "license": "Public domain (United States)",
+            "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+            "source": "Internet Archive",
+            "sourceUrl": "https://archive.org/details/Nosferatu1922HD",
+            "evidenceUrl": "https://archive.org/details/Nosferatu1922HD",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Stream probed for HTTP 206 range support at build time."
+          },
+          {
+            "assetType": "poster",
+            "status": "verified",
+            "license": "PD-US",
+            "licenseUrl": "https://en.wikipedia.org/wiki/File:Nosferatu_poster_%28Albin_Grau%2C_1922%29_1.jpg",
+            "source": "en",
+            "sourceUrl": "https://en.wikipedia.org/wiki/File:Nosferatu_poster_%28Albin_Grau%2C_1922%29_1.jpg",
+            "evidenceUrl": "https://en.wikipedia.org/wiki/File:Nosferatu_poster_%28Albin_Grau%2C_1922%29_1.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial"
+          },
+          {
+            "assetType": "backdrop",
+            "status": "verified",
+            "license": "PD-US",
+            "licenseUrl": "https://en.wikipedia.org/wiki/File:Nosferatu_poster_%28Albin_Grau%2C_1922%29_1.jpg",
+            "source": "Cinemora (derived from the original poster)",
+            "sourceUrl": "https://en.wikipedia.org/wiki/File:Nosferatu_poster_%28Albin_Grau%2C_1922%29_1.jpg",
+            "evidenceUrl": "https://en.wikipedia.org/wiki/File:Nosferatu_poster_%28Albin_Grau%2C_1922%29_1.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Derivative work generated locally from the public-domain poster."
+          }
+        ]
+      },
+      "sourcePage": "https://archive.org/details/Nosferatu1922HD",
+      "createdAt": "2026-11-06T12:12:03Z",
+      "updatedAt": "2026-11-06T12:12:03Z"
+    },
+    {
+      "id": "the-cabinet-of-dr-caligari-1920",
+      "slug": "the-cabinet-of-dr-caligari-1920",
+      "title": "The Cabinet of Dr. Caligari",
+      "originalTitle": "Das Cabinet des Dr. Caligari",
+      "year": 1920,
+      "runtimeMinutes": 76,
+      "tagline": "The first horror film — and its first unreliable narrator.",
+      "synopsis": "At a fairground, the mysterious Dr. Caligari exhibits a somnambulist who has slept for twenty-three years and who, by night, commits murder. Told by a narrator whose mind may be as warped as the film's painted sets, Caligari invented the psychological twist ending along with the expressionist look that still defines cinematic dread.",
+      "genres": [
+        {
+          "id": "horror",
+          "name": "Horror",
+          "slug": "horror"
+        },
+        {
+          "id": "silent",
+          "name": "Silent Era",
+          "slug": "silent"
+        },
+        {
+          "id": "mystery",
+          "name": "Mystery",
+          "slug": "mystery"
+        }
+      ],
+      "director": [
+        "Robert Wiene"
+      ],
+      "cast": [
+        {
+          "name": "Werner Krauss",
+          "role": "Dr. Caligari"
+        },
+        {
+          "name": "Conrad Veidt",
+          "role": "Cesare"
+        },
+        {
+          "name": "Friedrich Fehér",
+          "role": "Franzis"
+        },
+        {
+          "name": "Lil Dagover",
+          "role": "Jane"
+        },
+        {
+          "name": "Hans Heinrich von Twardowski",
+          "role": "Alan"
+        }
+      ],
+      "writer": [
+        "Hans Janowitz",
+        "Carl Mayer"
+      ],
+      "composer": [],
+      "language": "de",
+      "country": "DE",
+      "color": "tinted",
+      "aspectRatio": "1.33:1",
+      "featuredRank": 2,
+      "poster": {
+        "src": "/posters/the-cabinet-of-dr-caligari-1920-md.webp",
+        "width": 600,
+        "height": 900,
+        "blurDataURL": "data:image/webp;base64,UklGRjwBAABXRUJQVlA4IDABAABwBgCdASoUAB4APulepk0pJSOiMAgBIB0JbACxDOfJwEYBSFxf4v8yqewyuqxm7LhyO1JyQOI3JAyWqQAA/kun9GZ/f3y/KpCGBj1C1Hf3Z03AAhjK1jJ48L2uQFeSO75IosYmSwQTG4Hdh70OHtkkwTV4SJVrfvYKtxYZqWdwC00LVUDUicSs/JGXKfquRZYpSLvbNAzL3d59IiD38asnj0tHsS2nB63G/NGsYoq/KfZluz4YDjcfh4SdguxEGvWom6gscPzaFPVrBjpuAuJaVN4JzDTQ07TeR0njqLAzM5GBwniKRgPiVEINLpkaHWW9lAlbs3GKh54Tu8twOa5TQlS+AoTVcIahs1o3fvGFKUlP5H0t8Bj46DgKMcJdckt0lZXVUu5CCTRrRR8AAAAA"
+      },
+      "backdrop": {
+        "src": "/backdrops/the-cabinet-of-dr-caligari-1920.webp",
+        "width": 1920,
+        "height": 1080
+      },
+      "videoSources": [
+        {
+          "url": "https://archive.org/download/thecabinetofdrcaligari/KabinettDesDoktorCaligariDas_512kb.mp4",
+          "mimeType": "video/mp4",
+          "quality": "auto",
+          "label": "Source"
+        }
+      ],
+      "subtitleSources": [
+        {
+          "url": "/subtitles/the-cabinet-of-dr-caligari-1920.en.vtt",
+          "language": "en",
+          "label": "English",
+          "kind": "subtitles",
+          "default": false,
+          "format": "vtt"
+        }
+      ],
+      "rights": {
+        "overallStatus": "verified",
+        "assetRights": [
+          {
+            "assetType": "video",
+            "status": "verified",
+            "license": "Public domain (United States)",
+            "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+            "source": "Internet Archive",
+            "sourceUrl": "https://archive.org/details/thecabinetofdrcaligari",
+            "evidenceUrl": "https://archive.org/details/thecabinetofdrcaligari",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Stream probed for HTTP 206 range support at build time."
+          },
+          {
+            "assetType": "poster",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:The_Cabinet_of_Doctor_Caligari_Movie_poster.jpg",
+            "source": "commons",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Cabinet_of_Doctor_Caligari_Movie_poster.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:The_Cabinet_of_Doctor_Caligari_Movie_poster.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial"
+          },
+          {
+            "assetType": "backdrop",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:The_Cabinet_of_Doctor_Caligari_Movie_poster.jpg",
+            "source": "Cinemora (derived from the original poster)",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Cabinet_of_Doctor_Caligari_Movie_poster.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:The_Cabinet_of_Doctor_Caligari_Movie_poster.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Derivative work generated locally from the public-domain poster."
+          },
+          {
+            "assetType": "subtitle",
+            "status": "verified",
+            "license": "Public domain (United States)",
+            "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+            "source": "Internet Archive",
+            "sourceUrl": "https://archive.org/details/thecabinetofdrcaligari",
+            "evidenceUrl": "https://archive.org/details/thecabinetofdrcaligari",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial"
+          }
+        ]
+      },
+      "sourcePage": "https://archive.org/details/thecabinetofdrcaligari",
+      "createdAt": "2026-11-06T12:06:45Z",
+      "updatedAt": "2026-11-06T12:06:45Z"
+    },
+    {
+      "id": "metropolis-1927",
+      "slug": "metropolis-1927",
+      "title": "Metropolis",
+      "originalTitle": null,
+      "year": 1927,
+      "runtimeMinutes": 148,
+      "tagline": "The city of the future, built on the backs of the underground.",
+      "synopsis": "In a towering future metropolis the wealthy live in art-deco luxury above, while workers toil beneath the earth to keep the machines running. When Freder, son of the city's ruler, falls for the prophetic Maria and discovers a duplicate built to destroy her movement, the city's fragile order begins to collapse. Fritz Lang's cathedral of machinery is the blueprint for nearly every science-fiction film since.",
+      "genres": [
+        {
+          "id": "sci-fi",
+          "name": "Science Fiction",
+          "slug": "sci-fi"
+        },
+        {
+          "id": "drama",
+          "name": "Drama",
+          "slug": "drama"
+        },
+        {
+          "id": "silent",
+          "name": "Silent Era",
+          "slug": "silent"
+        }
+      ],
+      "director": [
+        "Fritz Lang"
+      ],
+      "cast": [
+        {
+          "name": "Brigitte Helm",
+          "role": "Maria / The Machine-Man"
+        },
+        {
+          "name": "Alfred Abel",
+          "role": "Joh Fredersen"
+        },
+        {
+          "name": "Gustav Fröhlich",
+          "role": "Freder"
+        },
+        {
+          "name": "Rudolf Klein-Rogge",
+          "role": "Rotwang"
+        },
+        {
+          "name": "Heinrich George",
+          "role": "Josaphat"
+        }
+      ],
+      "writer": [
+        "Thea von Harbou"
+      ],
+      "composer": [],
+      "language": "de",
+      "country": "DE",
+      "color": "bw",
+      "aspectRatio": "1.33:1",
+      "featuredRank": 3,
+      "poster": {
+        "src": "/posters/metropolis-1927-md.webp",
+        "width": 600,
+        "height": 900,
+        "blurDataURL": "data:image/webp;base64,UklGRuwAAABXRUJQVlA4IOAAAAAwBgCdASoUAB4APulkqU0pJaQiMAgBIB0JYwC+TvAnwR10SsNxY820pJ1ahYG9/Vopntwco3Td05KYAP6V1eKi4QdfGisYsfUYnithuK74+bp/SJa3B1WXWjTlgD+qfOz0baBTlecEvf15hbYq4CDpX0uOZ5RrWB3nuZvWgr0xlLAmEzJlGsDrHqA3Jkb5vRpnTamvFZvsgxlQPQc00jCLJMJiIFifhwgA0OwO819sjwPP84EwloZyo85p7RWYAApNidD5pzL6IsiR/l9GhjT9fT76SfCpkC+VBjxw5J0AAA=="
+      },
+      "backdrop": {
+        "src": "/backdrops/metropolis-1927.webp",
+        "width": 1920,
+        "height": 1080
+      },
+      "videoSources": [
+        {
+          "url": "https://archive.org/download/Metropolis1927EnglishVersion/Metropolis_1927_English_Version.mp4",
+          "mimeType": "video/mp4",
+          "quality": "auto",
+          "label": "Source"
+        }
+      ],
+      "subtitleSources": [],
+      "rights": {
+        "overallStatus": "verified",
+        "assetRights": [
+          {
+            "assetType": "video",
+            "status": "verified",
+            "license": "Public domain (United States)",
+            "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+            "source": "Internet Archive",
+            "sourceUrl": "https://archive.org/details/Metropolis1927EnglishVersion",
+            "evidenceUrl": "https://archive.org/details/Metropolis1927EnglishVersion",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Stream probed for HTTP 206 range support at build time."
+          },
+          {
+            "assetType": "poster",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:Boris_Bilinski_%281900-1948%29_Plakat_f%C3%BCr_den_Film_Metropolis_%281%29.jpg",
+            "source": "commons",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boris_Bilinski_%281900-1948%29_Plakat_f%C3%BCr_den_Film_Metropolis_%281%29.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Boris_Bilinski_%281900-1948%29_Plakat_f%C3%BCr_den_Film_Metropolis_%281%29.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial"
+          },
+          {
+            "assetType": "backdrop",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:Boris_Bilinski_%281900-1948%29_Plakat_f%C3%BCr_den_Film_Metropolis_%281%29.jpg",
+            "source": "Cinemora (derived from the original poster)",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boris_Bilinski_%281900-1948%29_Plakat_f%C3%BCr_den_Film_Metropolis_%281%29.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Boris_Bilinski_%281900-1948%29_Plakat_f%C3%BCr_den_Film_Metropolis_%281%29.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Derivative work generated locally from the public-domain poster."
+          }
+        ]
+      },
+      "sourcePage": "https://archive.org/details/Metropolis1927EnglishVersion",
+      "createdAt": "2026-11-06T12:06:45Z",
+      "updatedAt": "2026-11-06T12:06:45Z"
+    },
+    {
+      "id": "the-general-1926",
+      "slug": "the-general-1926",
+      "title": "The General",
+      "originalTitle": null,
+      "year": 1926,
+      "runtimeMinutes": 79,
+      "tagline": "One man, one locomotive, and the best stunt comedy ever filmed.",
+      "synopsis": "When Union spies steal his locomotive — and his sweetheart with it — Southern railway engineer Johnnie Gray gives chase on a train of his own. Buster Keaton engineers every gag with real rolling stock, building to a climax on a collapsing bridge that remains an astonishing piece of physical filmmaking.",
+      "genres": [
+        {
+          "id": "comedy",
+          "name": "Comedy",
+          "slug": "comedy"
+        },
+        {
+          "id": "action",
+          "name": "Action",
+          "slug": "action"
+        },
+        {
+          "id": "silent",
+          "name": "Silent Era",
+          "slug": "silent"
+        }
+      ],
+      "director": [
+        "Buster Keaton",
+        "Clyde Bruckman"
+      ],
+      "cast": [
+        {
+          "name": "Buster Keaton",
+          "role": "Johnnie Gray"
+        },
+        {
+          "name": "Marion Mack",
+          "role": "Annabelle Lee"
+        },
+        {
+          "name": "Glen Cavender",
+          "role": "Captain Anderson"
+        },
+        {
+          "name": "Jim Farley",
+          "role": "General Thatcher"
+        }
+      ],
+      "writer": [
+        "Buster Keaton",
+        "Clyde Bruckman"
+      ],
+      "composer": [],
+      "language": "en",
+      "country": "US",
+      "color": "bw",
+      "aspectRatio": "1.33:1",
+      "featuredRank": 4,
+      "poster": {
+        "src": "/posters/the-general-1926-md.webp",
+        "width": 600,
+        "height": 900,
+        "blurDataURL": "data:image/webp;base64,UklGRtAAAABXRUJQVlA4IMQAAABwBQCdASoUAB4APulcpU0pJSMiMAgBIB0JbACdMoABfcCGhnvcQd2rUv5jUhS2tJelBEkAAP6qtJsUcPLofnlZ5TyGiNcV0r+8WQYGoO0yH8ICn5woCk3JzKxJVHvijXtMOAt4KMJns6/9iVSy4wbwjQ6gGB5ZSIBJpiH9YqlF2KqWbuLyzXLv5GVavSqHkT3wfHq8XkmLNimre2f2LiKbQ3FavaaodulU5kRdhS7TGwUOFdXCdEa1nmoNlN/SFriPVZgA"
+      },
+      "backdrop": {
+        "src": "/backdrops/the-general-1926.webp",
+        "width": 1920,
+        "height": 1080
+      },
+      "videoSources": [
+        {
+          "url": "https://archive.org/download/TheGeneral1926/The_General_1926_720p_512kb.mp4",
+          "mimeType": "video/mp4",
+          "quality": "auto",
+          "label": "Source"
+        },
+        {
+          "url": "https://archive.org/download/TheGeneral1926/The_General_1926_720p.mp4",
+          "mimeType": "video/mp4",
+          "quality": "auto",
+          "label": "Alternate"
+        }
+      ],
+      "subtitleSources": [],
+      "rights": {
+        "overallStatus": "verified",
+        "assetRights": [
+          {
+            "assetType": "video",
+            "status": "verified",
+            "license": "Public domain (United States)",
+            "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+            "source": "Internet Archive",
+            "sourceUrl": "https://archive.org/details/TheGeneral1926",
+            "evidenceUrl": "https://archive.org/details/TheGeneral1926",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Stream probed for HTTP 206 range support at build time."
+          },
+          {
+            "assetType": "poster",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:The_General_%281926%29_-_Movie_Poster_2.png",
+            "source": "commons",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_General_%281926%29_-_Movie_Poster_2.png",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:The_General_%281926%29_-_Movie_Poster_2.png",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial"
+          },
+          {
+            "assetType": "backdrop",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:The_General_%281926%29_-_Movie_Poster_2.png",
+            "source": "Cinemora (derived from the original poster)",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_General_%281926%29_-_Movie_Poster_2.png",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:The_General_%281926%29_-_Movie_Poster_2.png",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Derivative work generated locally from the public-domain poster."
+          }
+        ]
+      },
+      "sourcePage": "https://archive.org/details/TheGeneral1926",
+      "createdAt": "2026-11-06T12:06:45Z",
+      "updatedAt": "2026-11-06T12:06:45Z"
+    },
+    {
+      "id": "the-phantom-of-the-opera-1925",
+      "slug": "the-phantom-of-the-opera-1925",
+      "title": "The Phantom of the Opera",
+      "originalTitle": null,
+      "year": 1925,
+      "runtimeMinutes": 93,
+      "tagline": "Behind the mask: the face that made audiences scream.",
+      "synopsis": "Beneath the Paris Opera lives a disfigured composer who haunts the theatre and falls obsessively in love with a young soprano. He tutors her, terrorises the house, and finally drags her into his subterranean lair. Lon Chaney's self-designed make-up — and the moment his mask is torn away — made this the defining horror spectacle of the silent era.",
+      "genres": [
+        {
+          "id": "horror",
+          "name": "Horror",
+          "slug": "horror"
+        },
+        {
+          "id": "drama",
+          "name": "Drama",
+          "slug": "drama"
+        },
+        {
+          "id": "silent",
+          "name": "Silent Era",
+          "slug": "silent"
+        }
+      ],
+      "director": [
+        "Rupert Julian"
+      ],
+      "cast": [
+        {
+          "name": "Lon Chaney",
+          "role": "The Phantom"
+        },
+        {
+          "name": "Mary Philbin",
+          "role": "Christine Daaé"
+        },
+        {
+          "name": "Norman Kerry",
+          "role": "Vicomte Raoul de Chagny"
+        },
+        {
+          "name": "Arthur Edmund Carewe",
+          "role": "Ledoux"
+        },
+        {
+          "name": "Gibson Gowland",
+          "role": "Simon Buquet"
+        }
+      ],
+      "writer": [
+        "Elliott J. Clawson",
+        "Gaston Leroux"
+      ],
+      "composer": [],
+      "language": "en",
+      "country": "US",
+      "color": "tinted",
+      "aspectRatio": "1.33:1",
+      "featuredRank": 5,
+      "poster": {
+        "src": "/posters/the-phantom-of-the-opera-1925-md.webp",
+        "width": 600,
+        "height": 900,
+        "blurDataURL": "data:image/webp;base64,UklGRhgBAABXRUJQVlA4IAwBAACwBQCdASoUAB4APulgp00pJaOiMAgBIB0JbACdMxhOVbWRBY028sFRsaG+RV+1xd94dLGPgAAA/qAXyaJUijai+fVd0GCahUNmEAKu8WWuIRTi2dbh5JeM2Dz4M6+w0sd59TGbojEbZMVjuz3CMYZcdRF/0/NEI+eGIW/ynHEMqe3q/Uu2uV21TmBrMUrGUFD+gPHfBaM9/YTH6Cq0ELNWGdJBGQu/S/2a+Ob6oSHnsJG2lf/JRAPX/BanAwidg7qmyL1Mfn5qzK8EP8m0Oob+buETuhUFnueud167DlZ3vP9QCORZ00Hqygzo4R38GJ09e1UJ61oanEM6/HB+/bYY/GS/yALQHq3ycQAA"
+      },
+      "backdrop": {
+        "src": "/backdrops/the-phantom-of-the-opera-1925.webp",
+        "width": 1920,
+        "height": 1080
+      },
+      "videoSources": [
+        {
+          "url": "https://archive.org/download/PhantomOfTheOpera1925HD/Phantom%20of%20the%20Opera%20%28Silent%201925%29.mp4",
+          "mimeType": "video/mp4",
+          "quality": "auto",
+          "label": "Source"
+        }
+      ],
+      "subtitleSources": [],
+      "rights": {
+        "overallStatus": "verified",
+        "assetRights": [
+          {
+            "assetType": "video",
+            "status": "verified",
+            "license": "Public domain (United States)",
+            "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+            "source": "Internet Archive",
+            "sourceUrl": "https://archive.org/details/PhantomOfTheOpera1925HD",
+            "evidenceUrl": "https://archive.org/details/PhantomOfTheOpera1925HD",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Stream probed for HTTP 206 range support at build time."
+          },
+          {
+            "assetType": "poster",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:The_Phantom_of_the_Opera_%281925_film%29.jpg",
+            "source": "commons",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Phantom_of_the_Opera_%281925_film%29.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:The_Phantom_of_the_Opera_%281925_film%29.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial"
+          },
+          {
+            "assetType": "backdrop",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:The_Phantom_of_the_Opera_%281925_film%29.jpg",
+            "source": "Cinemora (derived from the original poster)",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Phantom_of_the_Opera_%281925_film%29.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:The_Phantom_of_the_Opera_%281925_film%29.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Derivative work generated locally from the public-domain poster."
+          }
+        ]
+      },
+      "sourcePage": "https://archive.org/details/PhantomOfTheOpera1925HD",
+      "createdAt": "2026-11-06T12:06:45Z",
+      "updatedAt": "2026-11-06T12:06:45Z"
+    },
+    {
+      "id": "carnival-of-souls-1962",
+      "slug": "carnival-of-souls-1962",
+      "title": "Carnival of Souls",
+      "originalTitle": null,
+      "year": 1962,
+      "runtimeMinutes": 78,
+      "tagline": "She survived the crash. Something else came back with her.",
+      "synopsis": "Drifting into a small Kansas town after a drag-racing accident, church organist Mary Henry is drawn to an abandoned pavilion by the lake — and to the pale figures who gather there. Herk Harvey's no-budget nightmare, shot in industrial bleakness, became a midnight-movie touchstone and a direct ancestor of the modern psychological horror film.",
+      "genres": [
+        {
+          "id": "horror",
+          "name": "Horror",
+          "slug": "horror"
+        },
+        {
+          "id": "mystery",
+          "name": "Mystery",
+          "slug": "mystery"
+        }
+      ],
+      "director": [
+        "Herk Harvey"
+      ],
+      "cast": [
+        {
+          "name": "Candace Hilligoss",
+          "role": "Mary Henry"
+        },
+        {
+          "name": "Frances Feist",
+          "role": "Mrs. Thomas"
+        },
+        {
+          "name": "Sidney Berger",
+          "role": "John Linden"
+        },
+        {
+          "name": "Art Ellison",
+          "role": "The Minister"
+        },
+        {
+          "name": "Stan Levitt",
+          "role": "Dr. Samuels"
+        }
+      ],
+      "writer": [
+        "John Clifford"
+      ],
+      "composer": [],
+      "language": "en",
+      "country": "US",
+      "color": "bw",
+      "aspectRatio": "1.37:1",
+      "featuredRank": 6,
+      "poster": {
+        "src": "/posters/carnival-of-souls-1962-md.webp",
+        "width": 600,
+        "height": 900,
+        "blurDataURL": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAABwBQCdASoUAB4APulmqE6pJaOiMBgIASAdCWMAxvgIAKUcUQuOiJreRwWsnsuAPmexkkaAAP63sO+epXpZBqbR+oMM0Mvwh134wpY2G9/yRFBkthYIvgIELZJy4ZpDVZ9vxF2i39myAmoNs8ZnoneZXDmRY7QFQlnvug7BkvZhvrRX+HLNZn4JTGGw9feYzwG7dldDeW9s943KEre5chKIoKcdfx9w/TUNQZlADPdjP/be+Xkx0ICmscDr6AAA"
+      },
+      "backdrop": {
+        "src": "/backdrops/carnival-of-souls-1962.webp",
+        "width": 1920,
+        "height": 1080
+      },
+      "videoSources": [
+        {
+          "url": "https://archive.org/download/CarnivalOfSouls720p1962/CarnivalOfSouls720p.mp4",
+          "mimeType": "video/mp4",
+          "quality": "auto",
+          "label": "Source"
+        }
+      ],
+      "subtitleSources": [
+        {
+          "url": "/subtitles/carnival-of-souls-1962.en.vtt",
+          "language": "en",
+          "label": "English",
+          "kind": "subtitles",
+          "default": false,
+          "format": "vtt"
+        }
+      ],
+      "rights": {
+        "overallStatus": "verified",
+        "assetRights": [
+          {
+            "assetType": "video",
+            "status": "verified",
+            "license": "Public domain (United States)",
+            "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+            "source": "Internet Archive",
+            "sourceUrl": "https://archive.org/details/CarnivalOfSouls720p1962",
+            "evidenceUrl": "https://archive.org/details/CarnivalOfSouls720p1962",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Stream probed for HTTP 206 range support at build time."
+          },
+          {
+            "assetType": "poster",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:Carnival_of_Souls_%281962_one-sheet_poster%29.jpg",
+            "source": "commons",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carnival_of_Souls_%281962_one-sheet_poster%29.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Carnival_of_Souls_%281962_one-sheet_poster%29.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial"
+          },
+          {
+            "assetType": "backdrop",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:Carnival_of_Souls_%281962_one-sheet_poster%29.jpg",
+            "source": "Cinemora (derived from the original poster)",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carnival_of_Souls_%281962_one-sheet_poster%29.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Carnival_of_Souls_%281962_one-sheet_poster%29.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Derivative work generated locally from the public-domain poster."
+          },
+          {
+            "assetType": "subtitle",
+            "status": "verified",
+            "license": "Public domain (United States)",
+            "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+            "source": "Internet Archive",
+            "sourceUrl": "https://archive.org/details/CarnivalOfSouls720p1962",
+            "evidenceUrl": "https://archive.org/details/CarnivalOfSouls720p1962",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial"
+          }
+        ]
+      },
+      "sourcePage": "https://archive.org/details/CarnivalOfSouls720p1962",
+      "createdAt": "2026-11-06T12:06:45Z",
+      "updatedAt": "2026-11-06T12:06:45Z"
+    },
+    {
+      "id": "night-of-the-living-dead-1968",
+      "slug": "night-of-the-living-dead-1968",
+      "title": "Night of the Living Dead",
+      "originalTitle": null,
+      "year": 1968,
+      "runtimeMinutes": 96,
+      "tagline": "They're coming to get you, Barbra.",
+      "synopsis": "A group of strangers barricade themselves in a rural Pennsylvania farmhouse as the recently dead rise and feed on the living. George A. Romero's debut invented the modern zombie, cast a Black actor as its lead in 1968, and proved that horror could be shot like a documentary and still terrify. Released without a copyright notice, it entered the public domain by accident.",
+      "genres": [
+        {
+          "id": "horror",
+          "name": "Horror",
+          "slug": "horror"
+        },
+        {
+          "id": "drama",
+          "name": "Drama",
+          "slug": "drama"
+        }
+      ],
+      "director": [
+        "George A. Romero"
+      ],
+      "cast": [
+        {
+          "name": "Duane Jones",
+          "role": "Ben"
+        },
+        {
+          "name": "Judith O'Dea",
+          "role": "Barbra"
+        },
+        {
+          "name": "Karl Hardman",
+          "role": "Harry Cooper"
+        },
+        {
+          "name": "Marilyn Eastman",
+          "role": "Helen Cooper"
+        },
+        {
+          "name": "Keith Wayne",
+          "role": "Tom"
+        }
+      ],
+      "writer": [
+        "George A. Romero",
+        "John A. Russo"
+      ],
+      "composer": [],
+      "language": "en",
+      "country": "US",
+      "color": "bw",
+      "aspectRatio": "1.37:1",
+      "featuredRank": 7,
+      "poster": {
+        "src": "/posters/night-of-the-living-dead-1968-md.webp",
+        "width": 600,
+        "height": 900,
+        "blurDataURL": "data:image/webp;base64,UklGRhIBAABXRUJQVlA4IAYBAADQBQCdASoUAB4APuliqE0pJaOiMAgBIB0JQBbbP/xbDDfE4hmf2mU6kDki/0nzl6uuVlJodgkoAP6yPR+5yQEhCa/O+JdXBxwK2YJVrqR07e1wib5gzGlxgm2hRVc7vtwJxEaXlwEAFvGFMb8c3mH5f3J/cffDEx7WagerNrllCahKBuoCIjuK0lGlgtbpvPEV+l778Ch//fukKPBIJarEuzmoUsdviNbfEcWSEIb30GH61nYZ3yIqfIHAwwMV+NoWiufcI3d2cNkSbjzs9bcqRhHeJ1syxIiXatzHnjv5/bI/uMOkgIvoyBRhXmj64iz+Tr8sSVT/e7KRuLglIjce12AgAAAA"
+      },
+      "backdrop": {
+        "src": "/backdrops/night-of-the-living-dead-1968.webp",
+        "width": 1920,
+        "height": 1080
+      },
+      "videoSources": [
+        {
+          "url": "https://archive.org/download/Night.Of.The.Living.Dead_1080p/NightOfTheLivingDead_PS3.mp4",
+          "mimeType": "video/mp4",
+          "quality": "auto",
+          "label": "Source"
+        },
+        {
+          "url": "https://archive.org/download/Night.Of.The.Living.Dead_1080p/NightOfTheLivingDead.mp4",
+          "mimeType": "video/mp4",
+          "quality": "auto",
+          "label": "Alternate"
+        }
+      ],
+      "subtitleSources": [
+        {
+          "url": "/subtitles/night-of-the-living-dead-1968.en.vtt",
+          "language": "en",
+          "label": "English",
+          "kind": "subtitles",
+          "default": false,
+          "format": "vtt"
+        }
+      ],
+      "rights": {
+        "overallStatus": "verified",
+        "assetRights": [
+          {
+            "assetType": "video",
+            "status": "verified",
+            "license": "Public domain (United States)",
+            "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+            "source": "Internet Archive",
+            "sourceUrl": "https://archive.org/details/Night.Of.The.Living.Dead_1080p",
+            "evidenceUrl": "https://archive.org/details/Night.Of.The.Living.Dead_1080p",
+            "verifiedTerritories": [
+              "US"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Stream probed for HTTP 206 range support at build time."
+          },
+          {
+            "assetType": "poster",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:Night_Of_The_Living_Dead_%281968%29_-_Poster.jpg",
+            "source": "commons",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Night_Of_The_Living_Dead_%281968%29_-_Poster.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Night_Of_The_Living_Dead_%281968%29_-_Poster.jpg",
+            "verifiedTerritories": [
+              "US"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial"
+          },
+          {
+            "assetType": "backdrop",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:Night_Of_The_Living_Dead_%281968%29_-_Poster.jpg",
+            "source": "Cinemora (derived from the original poster)",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Night_Of_The_Living_Dead_%281968%29_-_Poster.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Night_Of_The_Living_Dead_%281968%29_-_Poster.jpg",
+            "verifiedTerritories": [
+              "US"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Derivative work generated locally from the public-domain poster."
+          },
+          {
+            "assetType": "subtitle",
+            "status": "verified",
+            "license": "Public domain (United States)",
+            "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+            "source": "Internet Archive",
+            "sourceUrl": "https://archive.org/details/Night.Of.The.Living.Dead_1080p",
+            "evidenceUrl": "https://archive.org/details/Night.Of.The.Living.Dead_1080p",
+            "verifiedTerritories": [
+              "US"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial"
+          }
+        ]
+      },
+      "sourcePage": "https://archive.org/details/Night.Of.The.Living.Dead_1080p",
+      "createdAt": "2026-11-06T12:06:45Z",
+      "updatedAt": "2026-11-06T12:06:45Z"
+    },
+    {
+      "id": "safety-last-1923",
+      "slug": "safety-last-1923",
+      "title": "Safety Last!",
+      "originalTitle": null,
+      "year": 1923,
+      "runtimeMinutes": 74,
+      "tagline": "The wall-climbing gag that nearly ended Harold Lloyd's career.",
+      "synopsis": "A small-town boy goes to the big city to make good, promising his girl a publicity stunt that will fill the department store where he works. What follows is one of the most famous sequences in comedy: a hand-over-hand climb up a twelve-storey building face, performed for real by a man missing two fingers from an earlier accident.",
+      "genres": [
+        {
+          "id": "comedy",
+          "name": "Comedy",
+          "slug": "comedy"
+        },
+        {
+          "id": "silent",
+          "name": "Silent Era",
+          "slug": "silent"
+        },
+        {
+          "id": "action",
+          "name": "Action",
+          "slug": "action"
+        }
+      ],
+      "director": [
+        "Fred C. Newmeyer",
+        "Sam Taylor"
+      ],
+      "cast": [
+        {
+          "name": "Harold Lloyd",
+          "role": "The Boy"
+        },
+        {
+          "name": "Mildred Davis",
+          "role": "The Girl"
+        },
+        {
+          "name": "Bill Strother",
+          "role": "The Pal"
+        },
+        {
+          "name": "Noah Young",
+          "role": "The Law"
+        },
+        {
+          "name": "Westcott Clarke",
+          "role": "Mr. Stubbs"
+        }
+      ],
+      "writer": [],
+      "composer": [],
+      "language": "en",
+      "country": "US",
+      "color": "bw",
+      "aspectRatio": "1.33:1",
+      "featuredRank": 8,
+      "poster": {
+        "src": "/posters/safety-last-1923-md.webp",
+        "width": 600,
+        "height": 900,
+        "blurDataURL": "data:image/webp;base64,UklGRkABAABXRUJQVlA4IDQBAACwBgCdASoUAB4APulep00pJSOiMAgBIB0JbACdMuN5mKp5xjefMNpO712smwaa4XH+k0XPch6Wuogyfea7AAD+iT5jOB2nS7aGUB2XnA/vKq0jINe9wtXFZFabkWsACF7WbjELmnNuhO3nQioETHek6OTz71+klZN0RDLX5FLcL54KgP6tJK8WjEM2fLDQSuW80fd/aZFvap8cusLj628h2BfYFSp+1Ju9rTX2a0zcUxXU6WM0ffDdAiDACBn6roEefC/4RtNy/FrU8v3mg822g6NAR3TVi8ewt2PLVIm+iJW9+VTniu2Nb67PLQKFtdIyRsMm6gE1sq3l5cVA5aJtf7b+Dye7XeL/M8YRbzEwVNt0hUhgR/+I2yU7UIjMj6IsoZTiIiQfNKLm/Ik+yZbSpeAAAA=="
+      },
+      "backdrop": {
+        "src": "/backdrops/safety-last-1923.webp",
+        "width": 1920,
+        "height": 1080
+      },
+      "videoSources": [
+        {
+          "url": "https://archive.org/download/safety-last-1923-silent-film-noir-comedy-short/Safety%20Last%20%281923%20Silent%2C%20Film%20noir%2C%20Comedy%2C%20Short%29.mp4",
+          "mimeType": "video/mp4",
+          "quality": "auto",
+          "label": "Source"
+        }
+      ],
+      "subtitleSources": [],
+      "rights": {
+        "overallStatus": "verified",
+        "assetRights": [
+          {
+            "assetType": "video",
+            "status": "verified",
+            "license": "Public domain (United States)",
+            "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+            "source": "Internet Archive",
+            "sourceUrl": "https://archive.org/details/safety-last-1923-silent-film-noir-comedy-short",
+            "evidenceUrl": "https://archive.org/details/safety-last-1923-silent-film-noir-comedy-short",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Stream probed for HTTP 206 range support at build time."
+          },
+          {
+            "assetType": "poster",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:Safety_last_poster.jpg",
+            "source": "commons",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Safety_last_poster.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Safety_last_poster.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial"
+          },
+          {
+            "assetType": "backdrop",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:Safety_last_poster.jpg",
+            "source": "Cinemora (derived from the original poster)",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Safety_last_poster.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Safety_last_poster.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Derivative work generated locally from the public-domain poster."
+          }
+        ]
+      },
+      "sourcePage": "https://archive.org/details/safety-last-1923-silent-film-noir-comedy-short",
+      "createdAt": "2026-11-06T12:06:45Z",
+      "updatedAt": "2026-11-06T12:06:45Z"
+    },
+    {
+      "id": "sunrise-1927",
+      "slug": "sunrise-1927",
+      "title": "Sunrise: A Song of Two Humans",
+      "originalTitle": null,
+      "year": 1927,
+      "runtimeMinutes": 94,
+      "tagline": "The simplest story, told more beautifully than any other.",
+      "synopsis": "A farmer is tempted by a woman from the city to murder his wife and sell the farm. Instead, on a day trip that begins in fear and ends in a carnival of reunion, he discovers what he nearly destroyed. F. W. Murnau's American debut uses a moving camera, forced perspective and painted light to make melodrama transcendent — it won the first Academy Award for Unique and Artistic Picture.",
+      "genres": [
+        {
+          "id": "drama",
+          "name": "Drama",
+          "slug": "drama"
+        },
+        {
+          "id": "romance",
+          "name": "Romance",
+          "slug": "romance"
+        },
+        {
+          "id": "silent",
+          "name": "Silent Era",
+          "slug": "silent"
+        }
+      ],
+      "director": [
+        "F. W. Murnau"
+      ],
+      "cast": [
+        {
+          "name": "George O'Brien",
+          "role": "The Man"
+        },
+        {
+          "name": "Janet Gaynor",
+          "role": "The Wife"
+        },
+        {
+          "name": "Margaret Livingston",
+          "role": "The Woman from the City"
+        },
+        {
+          "name": "Bodil Rosing",
+          "role": "The Maid"
+        }
+      ],
+      "writer": [
+        "Carl Mayer"
+      ],
+      "composer": [],
+      "language": "en",
+      "country": "US",
+      "color": "bw",
+      "aspectRatio": "1.33:1",
+      "featuredRank": 9,
+      "poster": {
+        "src": "/posters/sunrise-1927-md.webp",
+        "width": 600,
+        "height": 900,
+        "blurDataURL": "data:image/webp;base64,UklGRgoBAABXRUJQVlA4IP4AAACQBgCdASoUAB4APulgqE0pJaQiMAgBIB0JagCdMzL8rTASoHvAQdNPmB1nETmZHk1TN96zRusesh73AzzgAP7nHs+eS3L2tSPUhY+thmncBDVf6PX/ShSqusixfg9r7bSKcDtJ9kFqeiVQj9gSj9UBH5BQxmZSgD9RH7a63wXPLIC8s6NC9viO3g1//xJSUEcZtjCdK7YQdSTYhQBLhdzy2KHzr+7g5diCurlYXOwJyjxY4f45RP3r/5NWKd4sA1PzO3GppkUR7Q8l9qTRYvaYNnhHW6ZR1F9Oqp/iumLaa3Q9q+7NVhJHnDYjRyhIqdag7DZ0qjr/sVCE+EwoAA=="
+      },
+      "backdrop": {
+        "src": "/backdrops/sunrise-1927.webp",
+        "width": 1920,
+        "height": 1080
+      },
+      "videoSources": [
+        {
+          "url": "https://archive.org/download/sunrise_1927/sunrise_1927.mp4",
+          "mimeType": "video/mp4",
+          "quality": "auto",
+          "label": "Source"
+        },
+        {
+          "url": "https://archive.org/download/sunrise_1927/sunrise_1927.ia.mp4",
+          "mimeType": "video/mp4",
+          "quality": "auto",
+          "label": "Alternate"
+        }
+      ],
+      "subtitleSources": [],
+      "rights": {
+        "overallStatus": "verified",
+        "assetRights": [
+          {
+            "assetType": "video",
+            "status": "verified",
+            "license": "Public domain (United States)",
+            "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+            "source": "Internet Archive",
+            "sourceUrl": "https://archive.org/details/sunrise_1927",
+            "evidenceUrl": "https://archive.org/details/sunrise_1927",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Stream probed for HTTP 206 range support at build time."
+          },
+          {
+            "assetType": "poster",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:Sunrise_-_A_Song_of_Two_Humans.jpg",
+            "source": "commons",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunrise_-_A_Song_of_Two_Humans.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Sunrise_-_A_Song_of_Two_Humans.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial"
+          },
+          {
+            "assetType": "backdrop",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:Sunrise_-_A_Song_of_Two_Humans.jpg",
+            "source": "Cinemora (derived from the original poster)",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunrise_-_A_Song_of_Two_Humans.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Sunrise_-_A_Song_of_Two_Humans.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Derivative work generated locally from the public-domain poster."
+          }
+        ]
+      },
+      "sourcePage": "https://archive.org/details/sunrise_1927",
+      "createdAt": "2026-11-06T12:06:45Z",
+      "updatedAt": "2026-11-06T12:06:45Z"
+    },
+    {
+      "id": "battleship-potemkin-1925",
+      "slug": "battleship-potemkin-1925",
+      "title": "Battleship Potemkin",
+      "originalTitle": "Броненосец «Потёмкин»",
+      "year": 1925,
+      "runtimeMinutes": 75,
+      "tagline": "A staircase, a pram, and the birth of montage.",
+      "synopsis": "Sailors on the battleship Potemkin revolt against brutal officers, and their mutiny ignites an uprising in Odessa. Sergei Eisenstein assembles the film as a machine of edits — the Odessa Steps sequence remains the most studied forty seconds in film history.",
+      "genres": [
+        {
+          "id": "drama",
+          "name": "Drama",
+          "slug": "drama"
+        },
+        {
+          "id": "war",
+          "name": "War",
+          "slug": "war"
+        },
+        {
+          "id": "silent",
+          "name": "Silent Era",
+          "slug": "silent"
+        }
+      ],
+      "director": [
+        "Sergei Eisenstein"
+      ],
+      "cast": [
+        {
+          "name": "Aleksandr Antonov",
+          "role": "Vakulinchuk"
+        },
+        {
+          "name": "Vladimir Barsky",
+          "role": "Commander Golikov"
+        },
+        {
+          "name": "Grigori Aleksandrov",
+          "role": "Gilyarovsky"
+        },
+        {
+          "name": "Beatrice Vitoldi",
+          "role": "Woman with the Pram"
+        }
+      ],
+      "writer": [
+        "Nina Agadzhanova",
+        "Sergei Eisenstein"
+      ],
+      "composer": [],
+      "language": "ru",
+      "country": "RU",
+      "color": "bw",
+      "aspectRatio": "1.33:1",
+      "featuredRank": 10,
+      "poster": {
+        "src": "/posters/battleship-potemkin-1925-md.webp",
+        "width": 600,
+        "height": 900,
+        "blurDataURL": "data:image/webp;base64,UklGRkIBAABXRUJQVlA4IDYBAADQBwCdASoUAB4APulcpU0pJKMiMAgBIB0JbACdMoR6atG9r+fR9AH/gMeLX8MUUvojX14vGbmrLtfunkJV5YTmxvPShDgXAAD4L2YzB4C+uToxiAxfFOqwx6RCgpwZbp/vwX+9fRX5EAbRZsRojL8OHfazMfD6Pdw8KmnQfvAMcvB6uefehdYZZ8rTRZ56v0edPniR001Px4NRUSp7Fr/QGycMxWrFvl8KMatxqAPWaRizvwdIsoXUJ79KlcGe4tvE+NOQSFmoPUnQNGy1dgh8uMFxhf1pugow+Py3BGtc5BiMtlO3ibY45FBz2/NPODi0qhWWRkPK1j6+q+qcbBHGQurJ/WEykYAukdtZoMu92ZxmGYMoi7ao9HD9qCrI/BQOpsfVsh9V/OhgStrKmnSOwCa/azYA"
+      },
+      "backdrop": {
+        "src": "/backdrops/battleship-potemkin-1925.webp",
+        "width": 1920,
+        "height": 1080
+      },
+      "videoSources": [
+        {
+          "url": "https://archive.org/download/BattleshipPotemkin/Battleship_Potemkin_512kb.mp4",
+          "mimeType": "video/mp4",
+          "quality": "auto",
+          "label": "Source"
+        }
+      ],
+      "subtitleSources": [],
+      "rights": {
+        "overallStatus": "verified",
+        "assetRights": [
+          {
+            "assetType": "video",
+            "status": "verified",
+            "license": "Public domain (United States)",
+            "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+            "source": "Internet Archive",
+            "sourceUrl": "https://archive.org/details/BattleshipPotemkin",
+            "evidenceUrl": "https://archive.org/details/BattleshipPotemkin",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Stream probed for HTTP 206 range support at build time."
+          },
+          {
+            "assetType": "poster",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:Vintage_Potemkin.jpg",
+            "source": "commons",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vintage_Potemkin.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Vintage_Potemkin.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial"
+          },
+          {
+            "assetType": "backdrop",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:Vintage_Potemkin.jpg",
+            "source": "Cinemora (derived from the original poster)",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vintage_Potemkin.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Vintage_Potemkin.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Derivative work generated locally from the public-domain poster."
+          }
+        ]
+      },
+      "sourcePage": "https://archive.org/details/BattleshipPotemkin",
+      "createdAt": "2026-11-06T12:06:45Z",
+      "updatedAt": "2026-11-06T12:06:45Z"
+    },
+    {
+      "id": "detour-1945",
+      "slug": "detour-1945",
+      "title": "Detour",
+      "originalTitle": null,
+      "year": 1945,
+      "runtimeMinutes": 68,
+      "tagline": "The cheapest film noir ever made — and one of the best.",
+      "synopsis": "A hitchhiking piano player in Los Angeles catches a ride, makes the worst decisions of his life, and winds up hauling a body and a blackmailing femme fatale across the desert. Edgar G. Ulmer shot Detour in six days on Poverty Row and turned every budget limitation into fatalism.",
+      "genres": [
+        {
+          "id": "noir",
+          "name": "Film Noir",
+          "slug": "noir"
+        },
+        {
+          "id": "crime",
+          "name": "Crime",
+          "slug": "crime"
+        },
+        {
+          "id": "drama",
+          "name": "Drama",
+          "slug": "drama"
+        }
+      ],
+      "director": [
+        "Edgar G. Ulmer"
+      ],
+      "cast": [
+        {
+          "name": "Tom Neal",
+          "role": "Al Roberts"
+        },
+        {
+          "name": "Ann Savage",
+          "role": "Vera"
+        },
+        {
+          "name": "Claudia Drake",
+          "role": "Sue Harvey"
+        },
+        {
+          "name": "Edmund MacDonald",
+          "role": "Charles Haskell Jr."
+        }
+      ],
+      "writer": [
+        "Martin Goldsmith"
+      ],
+      "composer": [],
+      "language": "en",
+      "country": "US",
+      "color": "bw",
+      "aspectRatio": "1.37:1",
+      "featuredRank": 11,
+      "poster": {
+        "src": "/posters/detour-1945-md.webp",
+        "width": 600,
+        "height": 900,
+        "blurDataURL": "data:image/webp;base64,UklGRlQBAABXRUJQVlA4IEgBAAAwBgCdASoUAB4APulcpk0pJKMiMAgBIB0JbACsGaAFQxbdHsw27R0MMQXKsz0Po+LoJ5t4UPu0bUUAAP7FGzwG5fKwoQYi1NzWHYMcdCfpHUmpnWTluZCO/PbzTHfftZvslUijMqScSyGDH3AiwfRpBJe7me/AWuapLMUiSNBv3SHgf03W/9sLeFjxx9YUQDoSujXPJWd+dC3Xv9m61GDXRmJuOt9PSjZWLPb5/SNRBjvP/3AYWX4Y2Vk/c/P+67DoyZcNyHt3/SDo/fylfBeGMtiPcTaUoycEFBjwwX06U0WhX9NgwloRmyE3PEHwbA3ZldwFMYwGf1PhS8ppBYfBwdKxdj+IX3UJYP5lA+dCwC3YNQKO/YZnbZBvlptHcCgCRbXDQpx/zAOHZiseZMLek7s/88yBr+pfU2FdC+qbFg3BFLLyIAAA"
+      },
+      "backdrop": {
+        "src": "/backdrops/detour-1945.webp",
+        "width": 1920,
+        "height": 1080
+      },
+      "videoSources": [
+        {
+          "url": "https://archive.org/download/Detour/Detour.mp4",
+          "mimeType": "video/mp4",
+          "quality": "auto",
+          "label": "Source"
+        },
+        {
+          "url": "https://archive.org/download/Detour/Detour_512kb.mp4",
+          "mimeType": "video/mp4",
+          "quality": "auto",
+          "label": "Alternate"
+        }
+      ],
+      "subtitleSources": [
+        {
+          "url": "/subtitles/detour-1945.en.vtt",
+          "language": "en",
+          "label": "English",
+          "kind": "subtitles",
+          "default": false,
+          "format": "vtt"
+        }
+      ],
+      "rights": {
+        "overallStatus": "verified",
+        "assetRights": [
+          {
+            "assetType": "video",
+            "status": "verified",
+            "license": "Public domain (United States)",
+            "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+            "source": "Internet Archive",
+            "sourceUrl": "https://archive.org/details/Detour",
+            "evidenceUrl": "https://archive.org/details/Detour",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Stream probed for HTTP 206 range support at build time."
+          },
+          {
+            "assetType": "poster",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:Detour_%28poster%29.jpg",
+            "source": "commons",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Detour_%28poster%29.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Detour_%28poster%29.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial"
+          },
+          {
+            "assetType": "backdrop",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:Detour_%28poster%29.jpg",
+            "source": "Cinemora (derived from the original poster)",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Detour_%28poster%29.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Detour_%28poster%29.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Derivative work generated locally from the public-domain poster."
+          },
+          {
+            "assetType": "subtitle",
+            "status": "verified",
+            "license": "Public domain (United States)",
+            "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+            "source": "Internet Archive",
+            "sourceUrl": "https://archive.org/details/Detour",
+            "evidenceUrl": "https://archive.org/details/Detour",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial"
+          }
+        ]
+      },
+      "sourcePage": "https://archive.org/details/Detour",
+      "createdAt": "2026-11-06T12:06:45Z",
+      "updatedAt": "2026-11-06T12:06:45Z"
+    },
+    {
+      "id": "the-kid-1921",
+      "slug": "the-kid-1921",
+      "title": "The Kid",
+      "originalTitle": null,
+      "year": 1921,
+      "runtimeMinutes": 68,
+      "tagline": "A tramp and a child — the first time Chaplin made us cry.",
+      "synopsis": "A tramp finds an abandoned baby and raises him as his own. Five years later the pair run elaborate cons to stay together, until the authorities arrive. Chaplin's first feature balances slapstick with an unfamiliar tenderness, and produced one of the most famous final images in cinema.",
+      "genres": [
+        {
+          "id": "comedy",
+          "name": "Comedy",
+          "slug": "comedy"
+        },
+        {
+          "id": "drama",
+          "name": "Drama",
+          "slug": "drama"
+        },
+        {
+          "id": "silent",
+          "name": "Silent Era",
+          "slug": "silent"
+        }
+      ],
+      "director": [
+        "Charles Chaplin"
+      ],
+      "cast": [
+        {
+          "name": "Charlie Chaplin",
+          "role": "The Tramp"
+        },
+        {
+          "name": "Jackie Coogan",
+          "role": "The Kid"
+        },
+        {
+          "name": "Edna Purviance",
+          "role": "The Woman"
+        },
+        {
+          "name": "Tom Wilson",
+          "role": "The Policeman"
+        },
+        {
+          "name": "Henry Bergman",
+          "role": "Professor Guido"
+        }
+      ],
+      "writer": [
+        "Charles Chaplin"
+      ],
+      "composer": [],
+      "language": "en",
+      "country": "US",
+      "color": "bw",
+      "aspectRatio": "1.33:1",
+      "featuredRank": 12,
+      "poster": {
+        "src": "/posters/the-kid-1921-md.webp",
+        "width": 600,
+        "height": 900,
+        "blurDataURL": "data:image/webp;base64,UklGRuQAAABXRUJQVlA4INgAAABwBQCdASoUAB4APulcpU0pJSMiMAgBIB0JagCdMzAOAhABAxYRoW6IQ08pcRROIFBbyyogAP7v10eetK55/1gK0rLwU0U01NVUlN1/OJjjUZXy5juNYftmr8k+9xPt87K1btY9l1TgIyk03pnL7gbg4AEJrg2eVqxbvW9jVSTwx2qefXy3F2qgde9JBGWEko2NAJ3wMaBvi0as429xtN7eFghc8aebwgfESB1v8yfdbU7hLSBwaXg2qE5jnYv5hLz+eeOKMAlPGGSIp2CHyIPP8pUrqMQRJAA="
+      },
+      "backdrop": {
+        "src": "/backdrops/the-kid-1921.webp",
+        "width": 1920,
+        "height": 1080
+      },
+      "videoSources": [
+        {
+          "url": "https://archive.org/download/Brzdac1921/Brzd%C4%85c%20%281921%29.mp4",
+          "mimeType": "video/mp4",
+          "quality": "auto",
+          "label": "Source"
+        }
+      ],
+      "subtitleSources": [],
+      "rights": {
+        "overallStatus": "verified",
+        "assetRights": [
+          {
+            "assetType": "video",
+            "status": "verified",
+            "license": "Public domain (United States)",
+            "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+            "source": "Internet Archive",
+            "sourceUrl": "https://archive.org/details/Brzdac1921",
+            "evidenceUrl": "https://archive.org/details/Brzdac1921",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Stream probed for HTTP 206 range support at build time."
+          },
+          {
+            "assetType": "poster",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:The_Kid_%281921%29_poster.jpg",
+            "source": "commons",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Kid_%281921%29_poster.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:The_Kid_%281921%29_poster.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial"
+          },
+          {
+            "assetType": "backdrop",
+            "status": "verified",
+            "license": "Public domain",
+            "licenseUrl": "https://commons.wikimedia.org/wiki/File:The_Kid_%281921%29_poster.jpg",
+            "source": "Cinemora (derived from the original poster)",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Kid_%281921%29_poster.jpg",
+            "evidenceUrl": "https://commons.wikimedia.org/wiki/File:The_Kid_%281921%29_poster.jpg",
+            "verifiedTerritories": [
+              "US",
+              "IN"
+            ],
+            "verifiedAt": "2026-11-06",
+            "verifiedBy": "Cinemora editorial",
+            "verificationNotes": "Derivative work generated locally from the public-domain poster."
+          }
+        ]
+      },
+      "sourcePage": "https://archive.org/details/Brzdac1921",
+      "createdAt": "2026-11-06T12:06:45Z",
+      "updatedAt": "2026-11-06T12:06:45Z"
+    }
+  ]
+}
