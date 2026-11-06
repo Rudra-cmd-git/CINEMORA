@@ -6,8 +6,8 @@ export const SITE = {
   tagline: "Cinema, curated",
   description:
     "A premium, advert-free streaming home for cinema in the public domain. Hand-picked classics, remastered artwork, and a player built for watching.",
-  url: "https://cinemora.app",
-  contactEmail: "hello@cinemora.app",
+  url: "https://cinemora-gamma.vercel.app",
+  contactEmail: "hello@cinemora-gamma.vercel.app",
 } as const;
 
 export const STORAGE_KEYS = {

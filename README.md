@@ -24,6 +24,8 @@ npm run build
 npm start            # http://localhost:3100
 ```
 
+**Live demo:** https://cinemora-gamma.vercel.app
+
 Quality gates:
 
 ```bash
