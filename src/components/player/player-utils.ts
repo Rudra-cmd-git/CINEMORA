@@ -28,18 +28,22 @@ export function toPlayerMovie(movie: Movie): PlayerMovie {
 /**
  * Projects any playable title (film or episode) down to the player's minimal
  * prop surface. Episodes inherit the parent series' artwork and source page
- * when they don't carry their own.
+ * when they don't carry their own, and carry the series' release year —
+ * a season/episode number was never a year.
  */
-export function toPlayerWatchable(watchable: Watchable): PlayerMovie {
+export function toPlayerWatchable(watchable: Watchable, seriesYear?: number): PlayerMovie {
   if (watchable.type === "movie") {
     return toPlayerMovie(watchable);
   }
 
-  // Episode: fall back to series-level artwork/source where the episode has none.
+  // Episode: fall back to series-level artwork/source where the episode has none,
+  // and derive the year from the series (or episode air date) — never the season number.
+  const seriesYearFromAirDate = watchable.airDate?.slice(0, 4);
+  const year = Number(seriesYear ?? (seriesYearFromAirDate ? Number(seriesYearFromAirDate) : 0));
   return {
     slug: watchable.slug,
     title: watchable.title,
-    year: watchable.seasonNumber ? watchable.seasonNumber : 0,
+    year: Number.isFinite(year) ? year : 0,
     runtimeMinutes: watchable.runtimeMinutes ?? 0,
     genres: [],
     backdrop: watchable.poster ?? { src: "", width: 0, height: 0 },

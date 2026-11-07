@@ -15,6 +15,12 @@ export const STORAGE_KEYS = {
   progress: "cinemora:progress:v1",
   territory: "cinemora:territory:v1",
   recentSearches: "cinemora:recent-searches:v1",
+  thirdPartyServices: "cinemora:third-party-services:v1",
+} as const;
+
+export const ADMIN_ROUTES = {
+  root: "/admin",
+  services: "/admin/services",
 } as const;
 
 /** Canonical genre taxonomy. Mirrors the `genres` map in `data/sources.json`. */

@@ -2,6 +2,7 @@
   "generatedAt": "2026-11-06T12:12:03Z",
   "movies": [
     {
+      "type": "movie",
       "id": "nosferatu-1922",
       "slug": "nosferatu-1922",
       "title": "Nosferatu",
@@ -140,6 +141,7 @@
       "updatedAt": "2026-11-06T12:12:03Z"
     },
     {
+      "type": "movie",
       "id": "the-cabinet-of-dr-caligari-1920",
       "slug": "the-cabinet-of-dr-caligari-1920",
       "title": "The Cabinet of Dr. Caligari",
@@ -301,6 +303,7 @@
       "updatedAt": "2026-11-06T12:06:45Z"
     },
     {
+      "type": "movie",
       "id": "metropolis-1927",
       "slug": "metropolis-1927",
       "title": "Metropolis",
@@ -437,6 +440,7 @@
       "updatedAt": "2026-11-06T12:06:45Z"
     },
     {
+      "type": "movie",
       "id": "the-general-1926",
       "slug": "the-general-1926",
       "title": "The General",
@@ -577,6 +581,7 @@
       "updatedAt": "2026-11-06T12:06:45Z"
     },
     {
+      "type": "movie",
       "id": "the-phantom-of-the-opera-1925",
       "slug": "the-phantom-of-the-opera-1925",
       "title": "The Phantom of the Opera",
@@ -714,6 +719,7 @@
       "updatedAt": "2026-11-06T12:06:45Z"
     },
     {
+      "type": "movie",
       "id": "carnival-of-souls-1962",
       "slug": "carnival-of-souls-1962",
       "title": "Carnival of Souls",
@@ -869,6 +875,7 @@
       "updatedAt": "2026-11-06T12:06:45Z"
     },
     {
+      "type": "movie",
       "id": "night-of-the-living-dead-1968",
       "slug": "night-of-the-living-dead-1968",
       "title": "Night of the Living Dead",
@@ -1027,6 +1034,7 @@
       "updatedAt": "2026-11-06T12:06:45Z"
     },
     {
+      "type": "movie",
       "id": "safety-last-1923",
       "slug": "safety-last-1923",
       "title": "Safety Last!",
@@ -1162,6 +1170,7 @@
       "updatedAt": "2026-11-06T12:06:45Z"
     },
     {
+      "type": "movie",
       "id": "sunrise-1927",
       "slug": "sunrise-1927",
       "title": "Sunrise: A Song of Two Humans",
@@ -1300,6 +1309,7 @@
       "updatedAt": "2026-11-06T12:06:45Z"
     },
     {
+      "type": "movie",
       "id": "battleship-potemkin-1925",
       "slug": "battleship-potemkin-1925",
       "title": "Battleship Potemkin",
@@ -1433,6 +1443,7 @@
       "updatedAt": "2026-11-06T12:06:45Z"
     },
     {
+      "type": "movie",
       "id": "detour-1945",
       "slug": "detour-1945",
       "title": "Detour",
@@ -1595,6 +1606,7 @@
       "updatedAt": "2026-11-06T12:06:45Z"
     },
     {
+      "type": "movie",
       "id": "the-kid-1921",
       "slug": "the-kid-1921",
       "title": "The Kid",
@@ -1741,10 +1753,26 @@
       "tagline": "Some conspiracies run deeper than the White House.",
       "synopsis": "FBI agent Peter Sutherland monitors an emergency night line in the White House basement. When a call pulls him into a conspiracy that reaches the highest levels of government, he must protect a young cybersecurity CEO while uncovering a mole inside his own agency.",
       "genres": [
-        { "id": "action", "name": "Action", "slug": "action" },
-        { "id": "drama", "name": "Drama", "slug": "drama" },
-        { "id": "mystery", "name": "Mystery", "slug": "mystery" },
-        { "id": "crime", "name": "Crime", "slug": "crime" }
+        {
+          "id": "action",
+          "name": "Action",
+          "slug": "action"
+        },
+        {
+          "id": "drama",
+          "name": "Drama",
+          "slug": "drama"
+        },
+        {
+          "id": "mystery",
+          "name": "Mystery",
+          "slug": "mystery"
+        },
+        {
+          "id": "crime",
+          "name": "Crime",
+          "slug": "crime"
+        }
       ],
       "poster": {
         "src": "/posters/the-night-agent-md.webp",
@@ -1765,7 +1793,11 @@
           "slug": "season-1",
           "title": "Season 1",
           "seasonNumber": 1,
-          "poster": { "src": "/posters/the-night-agent-s1-md.webp", "width": 600, "height": 900 },
+          "poster": {
+            "src": "/posters/the-night-agent-s1-md.webp",
+            "width": 600,
+            "height": 900
+          },
           "overview": "A low-level FBI agent uncovers a conspiracy inside the White House.",
           "episodeCount": 10,
           "episodes": [
@@ -1855,10 +1887,26 @@
       "tagline": "The biggest heist in history.",
       "synopsis": "A criminal mastermind known as \"The Professor\" recruits a team of eight robbers to carry out the biggest heist in recorded history: to break into the Royal Mint of Spain and escape with millions of euros.",
       "genres": [
-        { "id": "action", "name": "Action", "slug": "action" },
-        { "id": "drama", "name": "Drama", "slug": "drama" },
-        { "id": "crime", "name": "Crime", "slug": "crime" },
-        { "id": "mystery", "name": "Mystery", "slug": "mystery" }
+        {
+          "id": "action",
+          "name": "Action",
+          "slug": "action"
+        },
+        {
+          "id": "drama",
+          "name": "Drama",
+          "slug": "drama"
+        },
+        {
+          "id": "crime",
+          "name": "Crime",
+          "slug": "crime"
+        },
+        {
+          "id": "mystery",
+          "name": "Mystery",
+          "slug": "mystery"
+        }
       ],
       "poster": {
         "src": "/posters/money-heist-md.webp",
@@ -1879,7 +1927,11 @@
           "slug": "season-1",
           "title": "Season 1",
           "seasonNumber": 1,
-          "poster": { "src": "/posters/money-heist-s1-md.webp", "width": 600, "height": 900 },
+          "poster": {
+            "src": "/posters/money-heist-s1-md.webp",
+            "width": 600,
+            "height": 900
+          },
           "overview": "The Professor's crew begins the Royal Mint heist.",
           "episodeCount": 13,
           "episodes": [

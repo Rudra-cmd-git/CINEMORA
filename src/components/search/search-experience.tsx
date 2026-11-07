@@ -252,7 +252,7 @@ export function SearchExperience({ entries }: SearchExperienceProps) {
               {entries.slice(0, 4).map((entry) => (
                 <li key={entry.slug}>
                   <Link
-                    href={`/movie/${entry.slug}`}
+                    href={entry.type === "series" ? `/series/${entry.slug}` : `/movie/${entry.slug}`}
                     className="group flex items-center gap-4 rounded-lg border border-line bg-elevated/30 p-3 transition-colors hover:border-line-strong hover:bg-elevated/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-canvas"
                   >
                     <span className="relative aspect-[2/3] w-12 shrink-0 overflow-hidden rounded-xs bg-surface ring-1 ring-inset ring-white/10">
@@ -308,7 +308,7 @@ export function SearchExperience({ entries }: SearchExperienceProps) {
             return (
               <li key={entry.slug}>
                 <Link
-                  href={`/movie/${entry.slug}`}
+                  href={entry.type === "series" ? `/series/${entry.slug}` : `/movie/${entry.slug}`}
                   onClick={() => rememberSearch(trimmedQuery)}
                   className="group flex gap-4 py-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-canvas sm:gap-6 sm:py-5"
                 >

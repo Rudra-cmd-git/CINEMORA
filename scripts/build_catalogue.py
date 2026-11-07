@@ -461,6 +461,7 @@ def main() -> int:
 
         movies.append(
             {
+                "type": "movie",
                 "id": slug,
                 "slug": slug,
                 "title": entry["title"],

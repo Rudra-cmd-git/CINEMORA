@@ -2,22 +2,20 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PlayerLoader } from "@/components/player/player-loader";
 import { parseInitialTime, toPlayerWatchable } from "@/components/player/player-utils";
-import { getEpisode } from "@/lib/catalogue";
+import { getEpisode, series } from "@/lib/catalogue";
 
 interface WatchEpisodePageProps {
-  params: Promise<{ seriesSlug: string; seasonSlug: string; episodeSlug: string }>;
+  params: Promise<{ title: string; seasonSlug: string; episodeSlug: string }>;
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export function generateStaticParams() {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const { series } = require("@/lib/catalogue");
-  const params: { seriesSlug: string; seasonSlug: string; episodeSlug: string }[] = [];
+  const params: { title: string; seasonSlug: string; episodeSlug: string }[] = [];
   for (const show of series) {
     for (const season of show.seasons) {
       for (const episode of season.episodes) {
         params.push({
-          seriesSlug: show.slug,
+          title: show.slug,
           seasonSlug: season.slug,
           episodeSlug: episode.slug,
         });
@@ -32,8 +30,8 @@ export const dynamicParams = false;
 export async function generateMetadata({
   params,
 }: WatchEpisodePageProps): Promise<Metadata> {
-  const { seriesSlug, seasonSlug, episodeSlug } = await params;
-  const resolved = getEpisode(seriesSlug, seasonSlug, episodeSlug);
+  const { title, seasonSlug, episodeSlug } = await params;
+  const resolved = getEpisode(title, seasonSlug, episodeSlug);
   if (!resolved) return { title: "Episode not found" };
 
   const { series, season, episode } = resolved;
@@ -60,8 +58,8 @@ export default async function WatchEpisodePage({
   params,
   searchParams,
 }: WatchEpisodePageProps) {
-  const { seriesSlug, seasonSlug, episodeSlug } = await params;
-  const resolved = getEpisode(seriesSlug, seasonSlug, episodeSlug);
+  const { title, seasonSlug, episodeSlug } = await params;
+  const resolved = getEpisode(title, seasonSlug, episodeSlug);
   if (!resolved) notFound();
 
   const { series, season, episode } = resolved;
@@ -71,7 +69,7 @@ export default async function WatchEpisodePage({
 
   return (
     <PlayerLoader
-      movie={toPlayerWatchable(episode)}
+      movie={toPlayerWatchable(episode, series.year)}
       initialTime={initialTime}
     />
   );

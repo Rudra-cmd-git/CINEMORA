@@ -214,7 +214,7 @@ function EpisodeButton({
       href={`/watch/${seriesSlug}/${`season-${season.seasonNumber}`}/${episode.slug}`}
       className={buttonClasses("ghost", "sm")}
     >
-      {`S${season.seasonNumber} E${episode.episodeNumber} · {episode.title}`}
+      {`S${season.seasonNumber} E${episode.episodeNumber} · ${episode.title}`}
     </Link>
   );
 }

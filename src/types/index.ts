@@ -303,3 +303,18 @@ export interface TerritorySelection {
   code: string;
   source: "heuristic" | "manual";
 }
+
+/* -------------------------------------------------------------------------- */
+/*  Third-Party Streaming Services                                             */
+/* -------------------------------------------------------------------------- */
+
+export type ServiceStatus = "active" | "inactive";
+
+export interface ThirdPartyService {
+  id: string;
+  name: string;
+  url: string;
+  status: ServiceStatus;
+  createdAt: string;
+  updatedAt: string;
+}

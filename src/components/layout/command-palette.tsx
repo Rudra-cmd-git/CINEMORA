@@ -35,11 +35,16 @@ export function CommandPalette({ entries, open, onOpenChange }: CommandPalettePr
   }, [query]);
 
   const go = React.useCallback(
-    (slug: string) => {
+    (href: string) => {
       onOpenChange(false);
-      router.push(`/movie/${slug}`);
+      router.push(href);
     },
     [onOpenChange, router],
+  );
+
+  const resolveHref = React.useCallback(
+    (entry: SearchEntry) => (entry.type === "series" ? `/series/${entry.slug}` : `/movie/${entry.slug}`),
+    [],
   );
 
   const onKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
@@ -52,7 +57,7 @@ export function CommandPalette({ entries, open, onOpenChange }: CommandPalettePr
     } else if (event.key === "Enter") {
       event.preventDefault();
       const target = results[activeIndex]?.movie;
-      if (target) go(target.slug);
+      if (target) go(resolveHref(target));
     }
   };
 
@@ -106,7 +111,7 @@ export function CommandPalette({ entries, open, onOpenChange }: CommandPalettePr
                     <button
                       type="button"
                       id={`command-result-${index}`}
-                      onClick={() => go(entry.slug)}
+                      onClick={() => go(resolveHref(entry))}
                       onMouseEnter={() => setActiveIndex(index)}
                       className={cn(
                         "flex w-full items-center gap-3 rounded-sm px-2 py-2 text-left transition-colors",
